@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="197px" height="49px" viewBox="0 0 197 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo">
+            <path d="M23,41.1 L23,41.1 C13.1,41.1 5,33.1 5,23.1 L5,23.1 C5,13.2 13,5.1 23,5.1 L34.3,5.1 C38,5.1 40.9,8.1 40.9,11.7 L40.9,23.1 C41,33 32.9,41.1 23,41.1 Z" id="Path" fill="#3F7DE0" fill-rule="nonzero" opacity="0.65"></path>
+            <path d="M28,36 L28,36 C18.1,36 10,28 10,18 L10,18 C10,8.1 18,0 28,0 L39.3,0 C43,0.1 46,3.1 46,6.7 L46,18.1 C46,28 38,36 28,36 Z" id="Path" fill="#00DFFC" fill-rule="nonzero" opacity="0.5"></path>
+            <path d="M18,46.1 L18,46.1 C8,46.1 0,38.1 0,28.1 L0,28.1 C0,18.2 8,10.1 18,10.1 L29.3,10.1 C33,10.1 35.9,13.1 35.9,16.7 L35.9,28.1 C35.9,38.1 27.9,46.1 18,46.1 Z" id="Path" fill="#3F7DE0" fill-rule="nonzero" opacity="0.7"></path>
+            <text id="allminds" font-family="AirbnbCerealApp-Medium, Airbnb Cereal App" font-size="36" font-weight="400" fill="#424242">
+                <tspan x="57.088" y="38">allminds</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
