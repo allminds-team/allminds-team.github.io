@@ -23880,3 +23880,9 @@ a:hover .text-hover-primary {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+
+@media (max-width: 768px) {
+  .device-iphone-x img {
+    pointer-events: none;
+  }
+}
