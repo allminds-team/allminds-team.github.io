@@ -23881,8 +23881,24 @@ a:hover .text-hover-primary {
   File for your custom SCSS style
 ------------------------------------*/
 
+input.email {
+  border: solid 2px #9E9E9E;
+}
+
+input.email:focus {
+  border-color: #377dff;
+}
+
+
 @media (max-width: 768px) {
   .device-iphone-x img {
     pointer-events: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .checklistWrapper {
+    display: flex;
+    justify-content: center;
   }
 }
