@@ -39,19 +39,25 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-155248021-1');
-  </script>
-  <!-- Global site tag (gtag.js) - Google Ads: 432419184 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-432419184"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
     gtag('config', 'AW-432419184');
   </script>
-  <!-- Event snippet for Website traffic conversion page -->
+  <!-- Event snippet for Click - try for free conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
   <script>
-    gtag('event', 'conversion', {'send_to': 'AW-432419184/aVKhCPmv4PMBEPDimM4B'});
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-432419184/Sw9fCMib8_MBEPDimM4B',
+          'event_callback': callback
+      });
+      //For users with adblockers => redirect after 2 seconds
+      setTimeout(function(){ window.location = url; }, 2000);
+      return false;
+    }
   </script>
 </head>
 <body>
@@ -156,7 +162,7 @@
                 <!-- End Questions -->
                 <!-- Button -->
                 <li class="navbar-nav-last-item">
-                  <a href="https://allminds.io/sign-up" class="btn btn-sm btn-primary btn-pill transition-3d-hover">
+                  <a onclick="return gtag_report_conversion('https://allminds.io/sign-up');" href="https://allminds.io/sign-up" class="btn btn-sm btn-primary btn-pill transition-3d-hover">
                     Try 30 days free
                   </a>
                 </li>
@@ -197,6 +203,7 @@
                 <a 
                   class="btn btn-sm btn-primary btn-pill transition-3d-hover mb-3"
                   style="font-size:1.25rem; font-weight:700; width:100%;"
+                  onclick="return gtag_report_conversion('https://allminds.io/sign-up');"
                   href="https://allminds.io/sign-up">
                   Start my free trial
                 </a>
@@ -294,7 +301,7 @@
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto">
           <h2 class="text-white mb-6">Join the platform made for therapists</h2>
-          <a href="https://allminds.io/sign-up" type="button" class="btn btn-light text-primary btn-block transition-3d-hover mb-3" style="border-radius:100px;">Start my free trial</a>
+          <a onclick="return gtag_report_conversion('https://allminds.io/sign-up');" href="https://allminds.io/sign-up" type="button" class="btn btn-light text-primary btn-block transition-3d-hover mb-3" style="border-radius:100px;">Start my free trial</a>
           <p class="text-white-70">✓ Free 30 Day trial. No credit card required. Access all features.</p>
         </div>
         <!-- End Title -->

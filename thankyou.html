@@ -42,15 +42,25 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-155248021-1');
-  </script>
-  <!-- Global site tag (gtag.js) - Google Ads: 432419184 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-432419184"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
     gtag('config', 'AW-432419184');
+  </script>
+  <!-- Event snippet for Click - try for free conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-432419184/Sw9fCMib8_MBEPDimM4B',
+          'event_callback': callback
+      });
+      //For users with adblockers => redirect after 2 seconds
+      setTimeout(function(){ window.location = url; }, 2000);
+      return false;
+    }
   </script>
 </head>
 <body>

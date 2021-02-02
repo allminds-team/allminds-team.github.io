@@ -42,15 +42,25 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-155248021-1');
-  </script>
-  <!-- Global site tag (gtag.js) - Google Ads: 432419184 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-432419184"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
     gtag('config', 'AW-432419184');
+  </script>
+  <!-- Event snippet for Click - try for free conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-432419184/Sw9fCMib8_MBEPDimM4B',
+          'event_callback': callback
+      });
+      //For users with adblockers => redirect after 2 seconds
+      setTimeout(function(){ window.location = url; }, 2000);
+      return false;
+    }
   </script>
 </head>
 <body>
@@ -158,7 +168,7 @@
                 <!-- End Questions -->
                 <!-- Button -->
                 <li class="navbar-nav-last-item">
-                  <a href="https://allminds.io/sign-up" class="btn btn-sm btn-primary btn-pill transition-3d-hover">
+                  <a onclick="return gtag_report_conversion('https://allminds.io/sign-up');" href="https://allminds.io/sign-up" class="btn btn-sm btn-primary btn-pill transition-3d-hover">
                     Try it free
                   </a>
                 </li>
@@ -258,7 +268,7 @@
                 </div>
                 <div id="basicsCollapseTwo" class="collapse" aria-labelledby="basicsHeadingTwo" data-parent="#basicsAccordion">
                   <div class="card-body px-0">
-                    <p>Simply <a href="https://allminds.io/sign-up">create a new account</a> to use all the Pro features free for 30 days. Near the end of your trial, choose a plan and enter your billing information to continue your subscription without interruption.</p>
+                    <p>Simply <a onclick="return gtag_report_conversion('https://allminds.io/sign-up');" href="https://allminds.io/sign-up">create a new account</a> to use all the Pro features free for 30 days. Near the end of your trial, choose a plan and enter your billing information to continue your subscription without interruption.</p>
                   </div>
                 </div>
               </div>
