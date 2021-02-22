@@ -517,17 +517,10 @@
               <div class="card h-100 shadow-primary-lg" style="border-radius: 12px; overflow: hidden">
                 <!-- Header -->
                 <div class="card-header border-0 text-center">
-                  <span class="d-block h3 text-dark">Clinic</span>
+                  <span class="d-block h3 text-dark">Clinics</span>
                   <span class="d-block mb-2">
-                    <span class="text-dark align-top">$</span>
                     <span class="font-size-4 text-dark font-weight-bold mr-n2">
-                      <span id="pricingCount2"
-                             data-hs-toggle-switch-item-options='{
-                               "min": 59,
-                               "max": 49
-                             }'>65</span>
                     </span>
-                    <span class="font-size-1">/ mon</span>
                   </span>
                 </div>
                 <!-- End Header -->
@@ -601,17 +594,26 @@
                       Personalized clinic analytics
                     </div>
                   </div>
-                  <div class="media font-size-1">
+                  <div class="media font-size-1 mb-5">
                     <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
                     <div class="media-body">
                       White glove support
                     </div>
                   </div>
+                  <a href="./clinics.html">Learn more<i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- End Body -->
 
                 <div class="card-footer border-0 text-dark">
-                  <a onclick="return gtag_report_conversion('https://allminds.io/sign-up');" href="https://allminds.io/sign-up" type="button" class="btn btn-soft-primary btn-block transition-3d-hover" style="border-radius:100px;">Try 30 days free</a>
+                  <a class="js-fancybox btn btn-soft-primary btn-block transition-3d-hover" href="#calendlyWidget" type="button" style="overflow: hidden; border-radius:100px;"
+                  >
+                    Schedule Demo
+                  </a>
+                  <!-- End Fancybox -->
+                  <!-- Calendly inline widget begin -->
+                  <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/allminds-team/juan?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width: 600px; height: 630px; overflow: hidden; display:none;"></div>
+                  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                  <!-- Calendly inline widget end -->
                 </div>
               </div>
               <!-- End Pricing -->
@@ -799,10 +801,12 @@
   <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
   <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="./assets/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
 
   <!-- JS Front -->
   <script src="./assets/js/hs.core.js"></script>
   <script src="./assets/js/hs.validation.js"></script>
+  <script src="./assets/js/hs.fancybox.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -834,6 +838,11 @@
             }
           }
         });
+      });
+
+      // initialization of fancybox
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
       });
 
       // initialization of go to
