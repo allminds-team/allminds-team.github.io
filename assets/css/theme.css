@@ -23901,6 +23901,60 @@ a:hover .text-hover-primary {
   color: #90CAF9;
 }
 
+.card-img-toolbox {
+  height: 164px;
+  object-fit: cover;
+}
+
+.card-img-toolbox {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-tag {
+  background-color: #E0E0E0;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  padding: 4px 8px 4px 8px;
+  color: #757575;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.CTA-toolbox {
+  border: 2px solid #2962FF;
+  border-radius: 12px;
+  padding: 16px;
+  color: #2962FF;
+}
+
+.CTA-toolbox h3 {
+  color: #2962FF;
+}
+
+.nav-disabled a {
+  pointer-events: none;
+  color: #BDBDBD!important;
+}
+
+.subtitle {
+  color: #757575;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.tag-green {
+  background-color: #81C784;
+  color: #1B5E20;
+}
+
+.tag-blue {
+  background-color: #64B5F6;
+  color: #0D47A1;
+}
+
 input.email {
   border: solid 2px #9E9E9E;
 }
@@ -23909,10 +23963,18 @@ input.email:focus {
   border-color: #377dff;
 }
 
+@media (max-width: 575px) {
+  .card-img-toolbox {
+    height: 260px;
+  }
+}
 
 @media (max-width: 768px) {
   .device-iphone-x img {
     pointer-events: none;
+  }
+  .card-img-toolbox {
+    height: 200px;
   }
 }
 
