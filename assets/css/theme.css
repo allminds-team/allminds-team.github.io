@@ -23901,6 +23901,12 @@ a:hover .text-hover-primary {
   color: #90CAF9;
 }
 
+.bgSvg {
+  position:  absolute;
+  top:  100px;
+  left:  0;
+}
+
 .card-img-toolbox {
   height: 164px;
   object-fit: cover;
@@ -23932,6 +23938,12 @@ a:hover .text-hover-primary {
 
 .CTA-toolbox h3 {
   color: #2962FF;
+}
+
+.featureImg {
+  max-width:  200%;
+  position:  relative;
+  left: -130px;
 }
 
 .nav-disabled a {
@@ -23982,5 +23994,12 @@ input.email:focus {
   .checklistWrapper {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .featureImg {
+    max-width:  150%;
+    left: 0px;
   }
 }
