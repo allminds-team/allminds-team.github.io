@@ -22301,6 +22301,11 @@ label.btn {
   background-repeat: repeat-x;
 }
 
+.gradient-y-blue {
+  background-image: linear-gradient(to bottom, rgba(41, 121, 255, 0.5) 0%, rgba(231, 234, 243, 0.5) 100%);
+  background-repeat: repeat-x;
+}
+
 /*------------------------------------
   Background Overlay Gradients
 ------------------------------------*/
