@@ -23946,6 +23946,17 @@ a:hover .text-hover-primary {
   left: -130px;
 }
 
+.featureImgLeft {
+  max-width:  200%;
+  position:  relative;
+  left: -120px;
+}
+
+.headerLink {
+  font-size:  1.875rem;
+  font-weight: 600;
+}
+
 .nav-disabled a {
   pointer-events: none;
   color: #BDBDBD!important;
@@ -23997,9 +24008,19 @@ input.email:focus {
   }
 }
 
+@media (max-width: 1200px) {
+  .headerLink {
+    font-size: calc(1.3125rem + 0.75vw); 
+  }
+}
+
 @media (min-width: 768px) {
   .featureImg {
     max-width:  150%;
     left: 0px;
+  }
+  .featureImgLeft {
+    max-width:  150%;
+    left: -160px;
   }
 }
