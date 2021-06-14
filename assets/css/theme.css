@@ -79,6 +79,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color:  #424242!important;
 }
 
 p {
@@ -4840,7 +4841,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23677788' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23677788' stroke-linecap='round' stroke-miterlimit='10' stroke-width='32' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-light .navbar-text {
@@ -22306,6 +22307,11 @@ label.btn {
   background-repeat: repeat-x;
 }
 
+.gradient-y-peach {
+  background-image: linear-gradient(#EFBEBC, #BBDEFB 50%, rgba(231, 234, 243, 0.5));
+  background-repeat: repeat-x;
+}
+
 /*------------------------------------
   Background Overlay Gradients
 ------------------------------------*/
@@ -24028,4 +24034,58 @@ input.email:focus {
     max-width:  150%;
     left: -160px;
   }
+}
+
+@font-face {
+  font-family: "Cereal";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/AirbnbCerealLight.woff") format("woff"),
+    url("../fonts/AirbnbCerealLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/AirbnbCerealBook.woff") format("woff"),
+    url("../fonts/AirbnbCerealBook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/AirbnbCerealMedium.woff") format("woff"),
+    url("../fonts/AirbnbCerealMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/AirbnbCerealBold.woff") format("woff"),
+    url("../fonts/AirbnbCerealBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/AirbnbCerealExtraBold.woff") format("woff"),
+    url("../fonts/AirbnbCerealExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/AirbnbCerealBlack.woff") format("woff"),
+    url("../fonts/AirbnbCerealBlack.ttf") format("truetype");
+}
+
+
+
+body {
+  font-family: 'Cereal', Fallback, sans-serif!important;
 }
