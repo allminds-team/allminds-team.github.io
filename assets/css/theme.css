@@ -23918,6 +23918,16 @@ a:hover .text-hover-primary {
   left:  0;
 }
 
+.boxNumber {
+  color: #2979FF;
+  font-weight: bold;
+  border: solid 3px #2979FF;
+  border-radius:  6px;
+  min-width:  32px;
+  margin-right:  16px;
+  text-align:  center;
+}
+
 .card-img-toolbox {
   height: 164px;
   object-fit: cover;
@@ -23977,6 +23987,10 @@ a:hover .text-hover-primary {
   color: #757575;
   font-size: 0.9rem;
   font-weight: 200;
+}
+
+.svgElement {
+  position:  absolute;
 }
 
 .tag-green {
