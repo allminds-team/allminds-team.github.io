@@ -44,26 +44,24 @@
     gtag('config', 'UA-155248021-1');
     gtag('config', 'AW-432419184');
   </script>
-  <!-- Event snippet for Click - try for free conversion page
+
+  <!-- Event snippet for Submit client assessment conversion page
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-432419184/HT4tCJLpqfYCEPDimM4B',
-          'event_callback': callback
-      });
-      //For users with adblockers => redirect after 2 seconds
+  function gtag_report_conversion(url) {
+    var callback = function () {
       if (typeof(url) != 'undefined') {
-          setTimeout(function(){ window.location = url; }, 2000);
-        }
-      return false;
-    }
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-432419184/9mdGCJ_WkfcCEPDimM4B',
+        'event_callback': callback
+    });
+    return false;
+  }
   </script>
+
   <!-- Facebook Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -83,13 +81,17 @@
   &noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
-  <!-- Facebook Conversion Typeform Submit -->
+
+  <!-- Conversions to track on Typeform Submit -->
   <script>
     function submitTypeform(event) {
+      //Facebook lead
       fbq('track', 'Lead');
+      //Google ad conversion
+      gtag_report_conversion();
     };
   </script>
-  <!-- End Facebook Conversion Typeform Submit  -->
+  <!-- End Conversions to track on Typeform Submit  -->
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -137,7 +139,7 @@
                 </li>  
                 <!-- Button -->
                 <li class="navbar-nav-last-item">
-                  <button class="btn transition-3d-hover" onclick="return gtag_report_conversion();" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="width:unset;fdisplay:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2979FF;color:#FFFFFF;border-radius:25px;padding:0 16px;font-weight:bold;cursor:pointer;line-height:48px;text-align:center;margin:0;text-decoration:none;">Find Therapist</button><script src="//embed.typeform.com/next/embed.js"></script>
+                  <button class="btn transition-3d-hover" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="width:unset;fdisplay:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2979FF;color:#FFFFFF;border-radius:25px;padding:0 16px;font-weight:bold;cursor:pointer;line-height:48px;text-align:center;margin:0;text-decoration:none;">Find Therapist</button><script src="//embed.typeform.com/next/embed.js"></script>
                 </li>
                 <!-- End Button -->
               </ul>
@@ -165,7 +167,7 @@
                 <p class="lead mb-6">Everyone is different - so our team is devoted to carefully understanding what you're dealing with and match you with the right therapist to get better.</p>
               </div>
               <div class="w-100 d-flex justify-content-center justify-content-lg-start">
-                <button class="btn transition-3d-hover" onclick="return gtag_report_conversion();" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="width:unset;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2979FF;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Find a Therapist</button><script src="//embed.typeform.com/next/embed.js"></script>
+                <button class="btn transition-3d-hover" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="width:unset;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2979FF;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Find a Therapist</button><script src="//embed.typeform.com/next/embed.js"></script>
               </div>
             </div> 
             <div class="col-12 col-lg-6 mt-5 mt-lg-0">
@@ -255,7 +257,7 @@
             <p class="lead mb-3">Allminds is more than just a matching service. Every week, we collect your feedback, measure your progress, and give your therapist the technology they need to make a real difference.</p>
             <p class="lead mt-3 text-center text-lg-left">
               <strong>
-                <a onclick="return gtag_report_conversion();" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="color:#2979FF; cursor:pointer;">Find a Therapist</a><script src="//embed.typeform.com/next/embed.js"></script>
+                <a data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="color:#2979FF; cursor:pointer;">Find a Therapist</a><script src="//embed.typeform.com/next/embed.js"></script>
               </strong>
             </p>
           <!-- End List -->
@@ -314,7 +316,7 @@
           <div class="w-md-80 text-center mx-md-auto">
             <h2 class="text-white" style="margin-bottom: 64px;">Connect with a therapist from the comfort of your home</h2>
             <div class="w-100 d-flex justify-content-center">
-              <button class="btn transition-3d-hover" onclick="return gtag_report_conversion();" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="width:unset; display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FFFFFF;color:#2979FF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Matched</button><script src="//embed.typeform.com/next/embed.js"></script>
+              <button class="btn transition-3d-hover" data-tf-slider="rVrbBeRc" data-tf-width="550" data-tf-on-submit="submitTypeform" style="width:unset; display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FFFFFF;color:#2979FF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Matched</button><script src="//embed.typeform.com/next/embed.js"></script>
             </div>
           </div>
           <!-- End Title -->
