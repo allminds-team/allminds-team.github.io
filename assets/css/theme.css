@@ -6199,18 +6199,29 @@ a.close.disabled {
 }
 
 .modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0.5rem;
+  /*position:  relative;*/
+  /*width: auto;*/
+  /*margin: 0.5rem;*/
   pointer-events: none;
+  /*Changes for for left slide below*/
+  position: absolute;
+  top:  0;
+  right:  0;
+  margin:  0!important;
+  height:  100%;
+  width:  100%;
+  max-width:  600px;
 }
 
 .modal.fade .modal-dialog {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  -webkit-transform: translate(0, -50px);
-          transform: translate(0, -50px);
+  /*-webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);*/
+  /*Changed translate for left slide*/
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6296,6 +6307,9 @@ a.close.disabled {
   border: 0.0625rem solid transparent;
   border-radius: 0.5rem;
   outline: 0;
+  /*Changes for left slide below*/
+  height:  100%;
+  border-radius: 12px 0 0 12px;
 }
 
 .modal-backdrop {
@@ -6305,7 +6319,7 @@ a.close.disabled {
   z-index: 1004;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(33, 50, 91, 0.125);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-backdrop.fade {
