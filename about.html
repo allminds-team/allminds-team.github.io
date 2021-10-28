@@ -7,16 +7,16 @@
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="Description" content="Empowering therapists to unlock their best performance.">
-  <meta property="og:url"                content="https://www.getallminds.com/clinics" />
+  <meta name="Description" content="Pioneering a more accessible mental health care system by supporting and empowering therapists.">
+  <meta property="og:url"                content="https://www.getallminds.com/about" />
   <meta property="og:type"               content="website" />
   <meta property="og:title"              content="About Allminds" />
-  <meta property="og:description"        content="Empowering therapists to unlock their best performance." />
-  <meta property="og:image"              content="https://www.getallminds.com/assets/img/allminds_ui/social_preview_clinics.png" />
+  <meta property="og:description"        content="Pioneering a more accessible mental health care system by supporting and empowering therapists." />
+  <meta property="og:image"              content="https://www.getallminds.com/assets/img/about/backgroundMeditation.png" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About Allminds">
-  <meta name="twitter:description" content="Empowering therapists to unlock their best performance.">
-  <meta name="twitter:image" content="https://www.getallminds.com/assets/img/allminds_ui/social_preview_clinics.png">
+  <meta name="twitter:description" content="Pioneering a more accessible mental health care system by supporting and empowering therapists.">
+  <meta name="twitter:image" content="https://www.getallminds.com/assets/img/about/backgroundMeditation.png">
   <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.ico">
 
@@ -31,6 +31,11 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="./assets/css/theme.css">
+
+  <!-- JS Global Compulsory -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155248021-1"></script>
@@ -88,440 +93,136 @@
             "fixEffect": "slide"
           }'>
     <div class="header-section">
-      <div id="logoAndNav" class="container">
-        <!-- Nav -->
-        <nav class="js-mega-menu navbar navbar-expand-lg">
-          <!-- Logo -->
-          <a class="navbar-brand" href="/" aria-label="Front">
-            <img src="./assets/svg/logos/logo.svg" alt="Logo">
-          </a>
-          <!-- End Logo -->
-
-          <!-- Responsive Toggle Button -->
-          <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
-                  aria-label="Toggle navigation"
-                  aria-expanded="false"
-                  aria-controls="navBar"
-                  data-toggle="collapse"
-                  data-target="#navBar">
-            <span class="navbar-toggler-default">
-              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
-              </svg>
-            </span>
-            <span class="navbar-toggler-toggled">
-              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-              </svg>
-            </span>
-          </button>
-          <!-- End Responsive Toggle Button -->
-
-          <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse">
-            <div class="navbar-body header-abs-top-inner">
-              <ul class="navbar-nav"> 
-                <li class="navbar-nav-item">
-                  <a class="nav-link" href="./index.html">Home</a>
-                </li>    
-                <li class="navbar-nav-item">
-                  <a class="nav-link" href="./my-therapist.html">Get therapy</a>
-                </li>   
-                <!-- Questions -->
-                <li class="hs-has-mega-menu navbar-nav-item"
-                    data-hs-mega-menu-item-options='{
-                      "desktop": {
-                        "position": "right",
-                        "maxWidth": "260px"
-                      }
-                    }'>
-                  <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
-
-                  <!-- Docs - Submenu -->
-                  <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px; margin-right: 85px;">
-                    <!-- Promo Item -->
-                    <div class="navbar-promo-item">
-                      <a class="navbar-promo-link" href="./faq.html">
-                        <div class="media align-items-center">
-                          <img class="navbar-promo-icon" src="./assets/svg/icons/icon-1.svg" alt="SVG">
-                          <div class="media-body">
-                            <span class="navbar-promo-title">FAQ</span>
-                            <small class="navbar-promo-text">View common questions</small>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- End Promo Item -->
-                    <!-- Promo Item -->
-                    <div class="navbar-promo-item">
-                      <a class="navbar-promo-link" href="./quick-start-clients.html">
-                        <div class="media align-items-center">
-                          <img class="navbar-promo-icon" src="./assets/svg/icons/icon-12.svg" alt="SVG">
-                          <div class="media-body">
-                            <span class="navbar-promo-title">Guide for clients</span>
-                            <small class="navbar-promo-text">Help your clients get started with Allminds</small>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- End Promo Item -->
-                    <!-- Promo Item -->
-<!--                     <div class="navbar-promo-item">
-                      <a target="_blank" class="navbar-promo-link" href="./documentation/allminds_product_manual.pdf">
-                        <div class="media align-items-center">
-                          <img class="navbar-promo-icon" src="./assets/svg/icons/icon-2.svg" alt="SVG">
-                          <div class="media-body">
-                            <span class="navbar-promo-title">
-                              Product Manual
-                              <span class="badge badge-primary badge-pill ml-1">v1.0</span>
-                            </span>
-                            <small class="navbar-promo-text">Click to view</small>
-                          </div>
-                        </div>
-                      </a>
-                    </div> -->
-                    <!-- End Promo Item -->
-                    <div class="navbar-promo-footer">
-                      <!-- List -->
-                      <div class="row no-gutters">
-                        <div class="col-6 navbar-promo-footer-ver-divider">
-                          <div class="navbar-promo-footer-item">
-                            <span class="navbar-promo-footer-text">Need more info?</span>
-                            <a class="navbar-promo-footer-text" href="#">
-                              hello@allminds.io
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End List -->
-                    </div>
-                  </div>
-                  <!-- End Docs - Submenu -->
-                </li>
-                <!-- End Questions -->
-                <!-- Button -->
-                <li class="navbar-nav-last-item">
-                  <a class="js-fancybox btn btn-sm btn-primary btn-pill transition-3d-hover" href="#calendlyWidget" style="overflow: hidden;"
-                  >
-                    Schedule Demo
-                  </a>
-                </li>
-                <!-- End Button -->
-                <!-- Button -->
-                <li class="navbar-nav-last-item">
-                  <a class="btn btn-sm btn-secondary btn-pill transition-3d-hover" href="https://allminds.io/sign-in/">
-                    Sign in
-                  </a>
-                </li>
-                <!-- End Button -->
-              </ul>
-            </div>
-          </div>
-          <!-- End Navigation -->
-        </nav>
-        <!-- End Nav -->
+      <!--Navigation bar-->
+      <div id="nav-placeholder">
       </div>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+      <!--end of Navigation bar-->
     </div>
   </header>
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main" style="overflow-x: hidden">
-    <!-- Calendly inline widget begin -->
-    <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/allminds-team/juan?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width: 600px; height: 630px; overflow: hidden; display:none;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
     <div class="overflow-hidden">
       <!-- Hero Section -->
-      <div class="gradient-y-blue position-relative">
-        <div class="space-top-3 space-bottom-4">
-          <div class="container d-flex justify-content-center">
-            <!-- Content -->
-            <div class="row space-top-lg-3">
-              <div class="col-12 col-lg-12">
-                <div class="text-center">
-                  <p class="lead mb-5" style="color: #2979FF">
-                    Our mission
-                  </p>
-                  <h1 class="mb-0 text-center">We’re making mental health care more accessible by empowering therapists and unlocking their best performance</h1>
-                  <p class="lead text-center mb-6 mt-6">With millions of people seeking mental health care every day, providers are struggling to meet demand. We’re seeking to solve this issue by helping therapists become more effective.</p>
-                </div>
-              </div> 
-              <div class="col-6">
-                <img src="./assets/svg/illustrations/girl-rocket.svg" class="w-100"/>
-              </div>   
-              <div class="col-6">
-                <img 
-                  src="./assets/svg/illustrations/man-balloons.svg" 
-                  class="w-100"
-                  style="position: relative; bottom: -200px;"
-                />
-              </div>                    
-            </div>
-            <!-- End Content -->
-          </div>
+      <div class="position-relative d-flex justify-content-center align-items-center" style="background-image:url(./assets/img/about/backgroundMeditation.png);background-size: cover; background-position: bottom right; height: 100vh; max-height: 800px">
+        <!-- Content -->
+        <div class="container text-center">
+          <h1 class="mb-0 text-center p-3" style="color:  #424242; background-color: rgba(255,255,255,0.5); border-radius: 12px; backdrop-filter: blur(10px);">We’re pioneering a more accessible mental health care system by supporting and empowering therapists</h1>    
         </div>
-
+        <!-- End Content -->
       </div>
       <!-- End Hero Section -->
     </div>
 
     <!-- Features Section -->
-    <div style="background-color: rgba(231, 234, 243, 0.5)">
-      <div class="container pl-6 pr-6 space-top-2">
+    <div>
+      <div class="container pl-6 pr-6 position-relative">
+        <div class="space-top-3 space-bottom-2">
+          <!-- SVG Quote -->
+          <figure style="position: absolute; top:80px; left:-48px; z-index:0;">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 8 8">
+              <path fill="#EEEEEE" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
+                C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
+                c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
+                C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
+            </svg>
+          </figure>
+          <!-- End SVG Quote -->
+          <blockquote class="h1 font-weight-normal mb-5" style="z-index:1;">
+            With millions of people seeking mental health care every day, therapists need support more than ever. At Allminds, our job is to <b>empower providers</b> and champion their expertise so they can focus on meeting clients where they are and partnering with them to <b>achieve lasting results</b>.
+          </blockquote>
+          <p class="lead mb-0">Juan Ordonez, Co-Founder & CEO</p>
+        </div>
 
-        <div class="row justify-content-md-between align-items-center space-top-0 space-bottom-3">
-          <div class="col-lg-6 mb-0 order-lg-2">
-            <p class="lead mb-5 ml-lg-11" style="color: #2979FF">
-              The problem
-            </p>
-            <div class="mb-5 text-left ml-lg-11">
-              <h2>One in four patients leave treatment worse than when they started</h2>
+        <div class="row justify-content-md-between align-items-center space-top-2 space-bottom-2">
+          <div class="col-12 mb-0">
+            <div class="mb-5 text-center d-flex flex-column align-items-center w-100">
+              <div class="w-100 w-lg-60">
+                <h2>A community of providers committed to quality and accessibility</h2>
+                <p class="lead mt-5">Providers at Allminds are committed to expanding access to high quality, evidence-based and culturally competent care.</p>
+              </div>
             </div>
-            <p class="lead mb-3 ml-lg-11">And this doesn’t include patients who simply don't improve.</p>
-            <p class="lead mb-0 ml-lg-11">This is happening because there are not enough tools to quickly identify patients who aren't responding to treatment. </p>
-          <!-- End List -->
-          </div> 
-          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="100">
-            <img 
-              src="./assets/svg/illustrations/man-sitting-tree.svg"
-              class="w-100"
-            />
+            <div class="d-flex justify-content-between mt-7 flex-wrap flex-lg-nowrap">
+              <div class="lead" style="max-width: calc(50% - 8px)">
+                <img 
+                  src="./assets/img/referrals/therapistLisa.png" 
+                  class="w-100 "
+                  style="border-radius: 12px;"
+                />
+              </div>
+              <div class="lead ml-0 ml-lg-3" style="max-width: calc(50% - 8px)">
+                <img 
+                  src="./assets/img/referrals/therapistSteven.png" 
+                  class="w-100"
+                  style="border-radius: 12px;"
+                />
+              </div>
+              <div class="lead ml-0 ml-lg-3" style="max-width: calc(50% - 8px)">
+                <img 
+                  src="./assets/img/referrals/therapistMarcelle.png" 
+                  class="w-100 mt-3 mt-lg-0"
+                  style="border-radius: 12px;"
+                />
+              </div>
+              <div class="lead ml-0 ml-lg-3" style="max-width: calc(50% - 8px)">
+                <img 
+                  src="./assets/img/referrals/therapistMarc.png" 
+                  class="w-100 mt-3 mt-lg-0"
+                  style="border-radius: 12px;"
+                />
+              </div>
+            </div>
           </div>    
         </div>
-
-        <div class="row justify-content-md-between align-items-md-center space-top-lg-0 space-bottom-2">
-          <div class="col-lg-6 mb-0">
-            <p class="lead mb-5" style="color: #2979FF">
-              Our solution
-            </p>
-            <div class="mb-5 text-left">
-              <h2>Measuring outcomes in real-time</h2>
-            </div>
-            <p class="lead mb-3">
-              Allminds is building technology that makes tracking behavioral outcomes easier than ever. In the office, via Telehealth, or both.
-            </p>
-            <p class="lead mb-0">
-              This helps therapists gain more insight into their clients' care, improving outcomes and increasing the total number of people they can help.
-            </p>
-          </div>     
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <img 
-              src="./assets/svg/illustrations/client-outcomes.svg"
-              class="w-100 ml-lg-11"
-            />
-          </div>
-        </div>
-
     </div>
     <!-- End Features Section -->
 
-    <!-- Testimonials Section -->
-    <div class="container space-top-2">
-      <div class="text-center mb-11">
-        <h2>What people are saying</h2>
-      </div>
-      <!-- Testimonials -->
-      <div class="card-deck d-block d-lg-flex card-lg-gutters-2">
-
-        <!-- Testimonials -->
-        <div class="card shadow-none bg-transparent">
-          <div class="card-body p-0">
-            <ul class="list-inline text-warning small">
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-            </ul>
-            <div class="mb-auto">
-              <p class="mb-0">The data that comes from the simple client check-in questions has been crucial in helping us track our client outcomes. It also makes it very easy to see productivity in an otherwise very honor based system that works for some but not others.</p>
-            </div>
+    <!-- Start Provider Section -->
+    <div class="container pl-5 pr-5 d-flex justify-content-center space-top-2 space-bottom-2">
+      <div class="mb-0 pt-5 pb-5 pr-5 pl-5 w-100 d-flex flex-column justify-content-center" style="min-height: 500px;background-image: url(./assets/img/providers/backgroundPractice.png);background-size: cover; background-position: right;  border-radius: 12px;">
+        <div class="w-100 w-lg-60 p-5" style="color: #424242;border-radius: 12px; background-color: rgba(255,255,255,0.8); backdrop-filter: blur(15px);" >
+          <div class="mb-5 text-left">
+            <h2 style="color: #424242;">Helping providers go in-network</h2>
+            <p class="lead mt-5">We help providers offer affordable, in-network care without the administrative burden. So they can grow their practice and focus on what matters most.</p>
           </div>
-
-          <div class="card-footer bg-transparent border-0 pt-5 px-0 pb-5">
-            <div class="media">
-              <div class="avatar avatar-circle mr-3">
-                <img class="avatar-img" src="./assets/img/allminds_ui/testimonial_annya.png" alt="Image Description">
-              </div>
-              <div class="media-body">
-                <h4 class="mb-1">Director of Clinical Services</h4>
-                <small class="d-block">Annya Shapiro, LMFT, Daly City Youth Center</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Testimonials -->
-
-        <!-- Testimonials -->
-        <div class="card shadow-none bg-transparent">
-          <div class="card-body p-0">
-            <ul class="list-inline text-warning small">
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-              <li class="list-inline-item mx-0">
-                <i class="fas fa-star"></i>
-              </li>
-            </ul>
-            <div class="mb-auto">
-              <p class="mb-0">As a clinician I want to always refine my skills and keep track of my client's progress. Allminds has made it simple and fun to monitor mine and my patient's growth with its evidence-based data tracking system.</p>
-            </div>
-          </div>
-
-          <div class="card-footer border-0 bg-transparent pt-5 px-0 pb-5">
-            <div class="media">
-              <div class="avatar avatar-circle mr-3">
-                <img class="avatar-img" src="./assets/img/allminds_ui/testimonial_shai.jpg" alt="Image Description">
-              </div>
-              <div class="media-body">
-                <h4 class="mb-1">MFT Intern</h4>
-                <small class="d-block text-body">Shaista Khanoon, Daly City Youth Center</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Testimonials -->
-
-      </div>
-      <!-- End Testimonials -->
-    </div>
-    <!-- End Testimonials Section -->
-
-    <div class="container space-top-3">
-      <!-- Step Section -->
-        <!-- Title -->
-        <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
-          <a href="./clinics.html" class="lead headerLink">
-            See our product in action<i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-        <!-- End Title -->
-
-        <!-- Step -->
-        <ul class="step step-lg step-centered mb-11" style="text-align: center;">
-          <li class="step-item">
-            <div class="step-content-wrapper">
-              <span class="step-icon step-icon-soft-primary">1</span>
-              <div class="step-content">
-                <img src="./assets/img/allminds_ui/iphoneClientCheckIn.png" alt="mobile chatting" class="mt-3" style="height: 500px">
-              </div>
-            </div>
-          </li>
-
-          <li class="step-item">
-            <div class="step-content-wrapper">
-              <span class="step-icon step-icon-soft-primary">2</span>
-              <div class="step-content">
-                <img src="./assets/img/allminds_ui/iphoneClientSession.png" alt="mobile chatting" class="mt-3" style="height: 500px">
-              </div>
-            </div>
-          </li>
-
-          <li class="step-item">
-            <div class="step-content-wrapper">
-              <span class="step-icon step-icon-soft-primary">3</span>
-              <div class="step-content">
-                <img src="./assets/img/allminds_ui/iphoneClientCheckOut.png" alt="mobile chatting" class="mt-3" style="height: 500px">
-              </div>
-            </div>
-          </li>
-        </ul>
-        <!-- End Step -->
-      <!-- End Step Section -->
-    </div> 
-
-    <!-- Icons Section -->
-    <div class="position-relative bg-primary overflow-hidden">
-      <div class="container space-top-3 space-top-md-3 position-relative z-index-2 space-bottom-3 space-bottom-md-3">
-        <!-- Title -->
-        <div class="w-md-80 w-lg-60 text-center mx-md-auto">
-          <h2 class="text-white mb-6">See what Allminds can do for your clinic</h2>
-          <div class="text-center mx-auto">
-            <a class="js-fancybox btn btn-light text-primary btn-block transition-3d-hover mb-3" href="#calendlyWidget" style="overflow: hidden; border-radius:100px;"
+          <div class="text-center text-lg-left">
+            <a 
+              href="./providers.html"
+              class="btn btn-sm btn-outline-primary btn-pill transition-3d-hover mb-3 pl-5 pr-5"
+              style="font-size:1.2rem; font-weight:500; border-width: 2px;"
             >
-              Schedule Demo
+              Learn more
             </a>
           </div>
         </div>
-        <!-- End Title -->
-      </div>
-
-      <!-- SVG Background Shape -->
-      <figure class="w-35 position-absolute top-0 right-0">
-        <div class="mt-n11 mr-n11">
-          <img class="img-fluid" src="./assets/svg/components/half-circle-3.svg" alt="Image Description">
-        </div>
-      </figure>
-      <figure class="w-25 position-absolute bottom-0 left-0">
-        <div class="mb-n11 ml-n11">
-          <img class="img-fluid" src="./assets/svg/components/half-circle-2.svg" alt="Image Description">
-        </div>
-      </figure>
-      <!-- End SVG Background Shape -->
+      <!-- End List -->
+      </div>   
     </div>
-    <!-- End Icons Section -->
+    <!-- End Provider Section -->
+
+    <div class="w-100 text-center space-top-2 space-bottom-3">
+      <p>If you have more questions about Allminds, you can always reach out to us!</p>
+      <i class="far fa-envelope mr-2"></i>
+      <a href="mailto:hello@allminds.io"><strong>hello@allminds.io</strong></a>
+    </div>
 
   </main>
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-navy">
-    <div class="container">
-      <div class="space-1">
-        <div class="row align-items-md-center mb-7">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <!-- Nav Link -->
-            <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
-              <li class="nav-item">
-                <a href="./index.html" aria-label="allminds"><h3 class="text-white mb-0">allminds</h3></a>
-              </li>
-              <li class="nav-item opacity mx-3">&#47;</li>
-              <li class="nav-item">
-                <a class="nav-link" href="./privacy.html">Privacy &amp; Policy</a>
-              </li>
-              <li class="nav-item opacity mx-3">&#47;</li>
-              <li class="nav-item">
-                <a class="nav-link" href="./terms.html">Terms</a>
-              </li>
-            </ul>
-            <!-- End Nav Link -->
-          </div>
-
-          <div class="col-md-6 text-md-right">
-            <ul class="list-inline mb-0">
-            </ul>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="w-md-75 text-lg-center mx-lg-auto">
-          <p class="text-white opacity-sm small">&copy; Allminds. 2020 Allminds, INC. All rights reserved.</p>
-          <p class="text-white opacity-sm small">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
-        </div>
-        <!-- End Copyright -->
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder">
+  </div>
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
   <!-- ========== END FOOTER ========== -->
 
   <!-- Go to Top -->
@@ -543,11 +244,6 @@
     <i class="fas fa-angle-up"></i>
   </a>
   <!-- End Go to Top -->
-
-  <!-- JS Global Compulsory -->
-  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
