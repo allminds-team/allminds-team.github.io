@@ -12,11 +12,11 @@
   <meta property="og:type"               content="website" />
   <meta property="og:title"              content="Allminds: Build a Thriving and Rewarding Practice" />
   <meta property="og:description"        content="Offer affordable, in-network care without the administrative burden. So you can grow your practice and focus on what matters most." />
-  <meta property="og:image"              content="https://www.getallminds.com/assets/img/allminds_ui/social_preview_clinics.png" />
+  <meta property="og:image"              content="https://www.getallminds.com/assets/img/providers/backgroundPractice.png" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Allminds: Build a Thriving and Rewarding Practice">
   <meta name="twitter:description" content="Offer affordable, in-network care without the administrative burden. So you can grow your practice and focus on what matters most.">
-  <meta name="twitter:image" content="https://www.getallminds.com/assets/img/allminds_ui/social_preview_clinics.png">
+  <meta name="twitter:image" content="https://www.getallminds.com/assets/img/providers/backgroundPractice.png">
   <meta name="facebook-domain-verification" content="jcoa61fp7asn31e587iycq3bk34t0o" />
 
   <!-- Favicon -->
@@ -128,7 +128,7 @@
         $(function(){
           $("#nav-placeholder").load("nav.html", function(){
             $("#CTABtn").append(
-                '<button id="CTANav" class="btn btn-sm btn-primary btn-pill transition-3d-hover" transition-3d-hover">Get started</button>');
+                '<button id="CTANav" onClick="clickCTA()" class="btn btn-sm btn-primary btn-pill transition-3d-hover" transition-3d-hover">Get started</button>');
           });
         });
       </script>
@@ -151,7 +151,7 @@
     <!-- End Modal -->
 
     <!-- Hero Section -->
-    <div class="position-relative" style="background-image:url(./assets/img/providers/backgroundPractice.jpg);background-size: cover; background-position: center; min-height: 600px;">
+    <div class="position-relative" style="background-image:url(./assets/img/providers/backgroundPractice.png);background-size: cover; background-position: center; min-height: 600px;">
       <div class="space-top-4 space-bottom-1">
         <div class="container pr-5 pl-5">
           <!-- Content -->
@@ -163,11 +163,23 @@
               </div>
               <div class="text-center text-lg-left">
                 <button 
+                  onClick="clickCTAHero()"
                   id="CTAHero"
                   class="btn btn-sm btn-primary btn-pill transition-3d-hover mb-3 pl-5 pr-5"
                   style="font-size:1.2rem; font-weight:500; width:100%;">
                   Get Started
                 </button>
+                <script>
+                  function clickCTAHero() {
+                    console.log("click");
+                  }
+                </script>
+                <!-- Call this function to programmatically trigger a click a CTA click -->
+                <script>
+                  function clickCTA() {
+                    $("#CTAHero").click();
+                  }
+                </script>
               </div>
             </div>    
           </div>
@@ -197,7 +209,7 @@
           <div class="step-content-wrapper">
             <div class="step-content d-flex justify-content-center align-items-center">
               <i class="fas fa-clipboard-check fa-2x mr-3"></i>
-              <p class="mb-0">Full admin support</p>
+              <p class="mb-0">Guaranteed, hassle-free payments</p>
             </div>
           </div>
         </li>
@@ -290,6 +302,7 @@
               <div class="text-center text-lg-left mt-5">
                 <button 
                   id="CTAInNetwork"
+                  onClick="clickCTA()"
                   class="btn btn-sm btn-primary btn-pill transition-3d-hover mb-3 pl-5 pr-5"
                   style="font-size:1.2rem; font-weight:500;">
                   Get Started
@@ -347,6 +360,7 @@
             <div class="text-center text-lg-left">
               <button 
                 id="CTAHowToGetStarted"
+                onClick="clickCTA()"
                 class="btn btn-sm btn-primary btn-pill transition-3d-hover mb-3 pl-5 pr-5"
                 style="font-size:1.2rem; font-weight:500;">
                 Get Started
@@ -384,7 +398,7 @@
             <div class="col-md-6 mb-3 mb-md-5">
               <div class="pr-md-4">
                 <h4>How much will I earn per session?</h4>
-                <p>This varies by license type. To get more specific info, submit our contact form and we’ll reach out to you within 24 hours.</p>
+                <p>This varies by license type. To get more specific info, click "Get Started" right above and we’ll reach out to you within 24 hours.</p>
               </div>
             </div>
 
@@ -419,15 +433,16 @@
       </div>
       <!-- End FAQ Section --> 
 
-      <!-- Icons Section -->
+      <!-- Bottom CTA -->
       <div class="position-relative overflow-hidden pl-6 pr-6" style="background-color: #F5F5F5;">
         <div class="container space-top-2 space-bottom-2 position-relative z-index-2">
           <!-- Title -->
           <div class="w-md-80 text-center mx-md-auto">
-            <h2 style="margin-bottom: 64px;">Get the support you deserve to build a thriving practice</h2>
-            <div class="w-100 d-flex justify-content-center">
+            <h2>Get the support you deserve to build a thriving practice</h2>
+            <div class="w-100 mt-5 d-flex justify-content-center">
               <button 
                 id="CTAFooter"
+                onClick="clickCTA()"
                 class="btn btn-sm btn-pill transition-3d-hover mb-3 pl-5 pr-5 text-white"
                 style="font-size:1.2rem; font-weight:500; background-color: #424242;border-radius:100px;max-width: 300px">
                 Join Allminds
@@ -437,50 +452,20 @@
           <!-- End Title -->
         </div>
       </div>
-      <!-- End Icons Section -->
+      <!-- End Bottom CTA -->
     </div>
 
   </main>
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer style="background-color: #F5F5F5;">
-    <div class="container">
-      <div class="space-1">
-        <div class="row align-items-md-center mb-7">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <!-- Nav Link -->
-            <ul class="nav nav-sm nav-x-sm align-items-center">
-              <li class="nav-item">
-                <a href="./index.html" aria-label="allminds"><h3 class="mb-0" style="color:#677788!important;">allminds</h3></a>
-              </li>
-              <li class="nav-item opacity mx-3">&#47;</li>
-              <li class="nav-item">
-                <a class="nav-link" href="./privacy.html">Privacy &amp; Policy</a>
-              </li>
-              <li class="nav-item opacity mx-3">&#47;</li>
-              <li class="nav-item">
-                <a class="nav-link" href="./terms.html">Terms</a>
-              </li>
-            </ul>
-            <!-- End Nav Link -->
-          </div>
-
-          <div class="col-md-6 text-md-right">
-            <ul class="list-inline mb-0">
-            </ul>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="w-md-75 text-lg-center mx-lg-auto">
-          <p class="opacity-sm small">&copy; Allminds. 2020 Allminds, INC. All rights reserved.</p>
-          <p class="opacity-sm small">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
-        </div>
-        <!-- End Copyright -->
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder">
+  </div>
+  <script>
+    $(function(){
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
   <!-- ========== END FOOTER ========== -->
 
   <!-- JS Implementing Plugins -->
