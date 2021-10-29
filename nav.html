@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <div id="navBar" class="collapse navbar-collapse">
       <div class="navbar-body header-abs-top-inner">
-        <ul class="navbar-nav">  
+        <ul class="navbar-nav" style="border-radius: 12px;">  
           <li class="navbar-nav-item">
             <a class="nav-link" href="./">Get Therapy</a>
           </li>       
@@ -58,30 +58,3 @@
   </nav>
   <!-- End Nav -->
 </div>
-
-<!-- JS Global Compulsory -->
-<script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-<script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- JS Implementing Plugins -->
-<script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
-<script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
-
-
-<!-- JS Plugins Init. -->
-<script>
-  $(document).on('ready', function () {
-    // initialization of header
-    var header = new HSHeader($('#header')).init();
-
-    // initialization of mega menu
-    var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
-      desktop: {
-        position: 'left'
-      }
-    }).init();
-
-  });
-
-</script>

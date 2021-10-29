@@ -110,6 +110,19 @@
   // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/i19txjpx'
   (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/i19txjpx';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
   </script>
+
+
+  <script>
+    //Get GCLID from url params 
+    const urlParams = new URLSearchParams(window.location.search);
+    const gclid = urlParams.get('gclid');
+    //Pass GCLID to intercom if available
+    if (gclid) {
+      window.Intercom("update", {
+        "GCLID": gclid
+      });
+    }
+  </script>
   <!-- End Initialize Intercom -->
 
 </head>
@@ -139,16 +152,6 @@
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main" class="overflow-hidden">
-    
-    <!-- Modal -->
-    <div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div data-tf-widget="VETjsMgK" data-tf-opacity="0" data-tf-chat style="width:100%;height:100%;"></div><script src="//embed.typeform.com/next/embed.js"></script>
-        </div>
-      </div>
-    </div>
-    <!-- End Modal -->
 
     <!-- Hero Section -->
     <div class="position-relative" style="background-image:url(./assets/img/providers/backgroundPractice.png);background-size: cover; background-position: center; min-height: 600px;">
@@ -163,17 +166,11 @@
               </div>
               <div class="text-center text-lg-left">
                 <button 
-                  onClick="clickCTAHero()"
                   id="CTAHero"
                   class="btn btn-sm btn-primary btn-pill transition-3d-hover mb-3 pl-5 pr-5"
                   style="font-size:1.2rem; font-weight:500; width:100%;">
                   Get Started
                 </button>
-                <script>
-                  function clickCTAHero() {
-                    console.log("click");
-                  }
-                </script>
                 <!-- Call this function to programmatically trigger a click a CTA click -->
                 <script>
                   function clickCTA() {
@@ -195,11 +192,11 @@
       style="border-bottom: solid 2px #E0E0E0;"
     >
       <!-- Step -->
-      <ul class="step step-lg step-centered text-center mb-0 w-85">
+      <ul class="step step-lg step-centered text-lg-center mb-0 w-85">
         <li class="step-item mb-5 mb-lg-0">
           <div class="step-content-wrapper">
-            <div class="step-content d-flex justify-content-center align-items-center">
-              <i class="fas fa-seedling fa-2x mr-3"></i>
+            <div class="step-content d-flex justify-content-lg-center align-items-center">
+              <i class="fas fa-seedling fa-2x mr-3 d-flex justify-content-center" style="width: 36px"></i>
               <p class="mb-0">Reliable & rewarding income</p>
             </div>
           </div>
@@ -207,8 +204,8 @@
 
         <li class="step-item mb-5 mb-lg-0">
           <div class="step-content-wrapper">
-            <div class="step-content d-flex justify-content-center align-items-center">
-              <i class="fas fa-clipboard-check fa-2x mr-3"></i>
+            <div class="step-content d-flex justify-content-lg-center align-items-center">
+              <i class="fas fa-clipboard-check fa-2x mr-3 d-flex justify-content-center" style="width: 36px"></i>
               <p class="mb-0">Guaranteed, hassle-free payments</p>
             </div>
           </div>
@@ -216,8 +213,8 @@
 
         <li class="step-item mb-0">
           <div class="step-content-wrapper">
-            <div class="step-content d-flex justify-content-center align-items-center">
-              <i class="fas fa-piggy-bank fa-2x mr-3"></i>
+            <div class="step-content d-flex justify-content-lg-center align-items-center">
+              <i class="fas fa-piggy-bank fa-2x mr-3 d-flex justify-content-center" style="width: 36px"></i>
               <p class="mb-0">Provider-first and entirely free to use</p>
             </div>
           </div>
@@ -233,7 +230,7 @@
       <div class="container pl-5 pr-5 space-top-2 space-bottom-1">
         <div class="row justify-content-md-between align-items-center space-top-2 space-bottom-1">
           <div class="col-lg-12 mb-0">
-            <div class="mb-5 text-left">
+            <div class="mb-5 text-center text-md-left">
               <h2>Grow your practice with Allminds</h2>
             </div>
             <div class="d-flex align-items-start">
@@ -284,7 +281,7 @@
 
         <div class="row justify-content-md-between align-items-lg-center space-top-2 space-bottom-1">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2">
-              <div class="mb-7 text-left">
+              <div class="mb-7 text-center text-md-left">
                 <h2>Make it easy to go in-network</h2>
               </div>
               <div class="d-flex align-items-start">
@@ -299,7 +296,7 @@
                 <i class="fas fa-check mr-3 mt-2" style="color: #00C853;"></i>
                 <p class="lead mb-0">Get credentialed with major insurance payers in under 45 days.</p>
               </div>
-              <div class="text-center text-lg-left mt-5">
+              <div class="mt-5 text-center text-md-left">
                 <button 
                   id="CTAInNetwork"
                   onClick="clickCTA()"
@@ -331,9 +328,9 @@
 
       <!-- Start How it Works -->
       <div class="container pl-5 pr-5 d-flex justify-content-center space-top-2 space-bottom-1">
-        <div class="mb-0 pt-5 pb-5 pr-5 pl-5 w-100" style="background-image: url(./assets/img/providers/backgroundCouple.jpg);background-size: cover; background-position: right;  border-radius: 12px;">
+        <div class="mb-0 p-3 p-lg-5 w-100" style="background-image: url(./assets/img/providers/backgroundCouple.jpg);background-size: cover; background-position: right;  border-radius: 12px;">
           <div class="w-100 w-lg-50 p-5" style="color: #424242;border-radius: 12px; background-color: rgba(255,255,255,0.8); backdrop-filter: blur(15px);" >
-            <div class="mb-7 text-left">
+            <div class="mb-7 text-center text-md-left">
               <h2 style="color: #424242;">How to get started</h2>
             </div>
             <div class="d-flex align-items-start">
@@ -357,7 +354,7 @@
                 <p class="lead mb-5">Within 4 to 12 weeks, you can officially use Allminds to see clients.</p>
               </div>
             </div>
-            <div class="text-center text-lg-left">
+            <div class="text-center text-md-left">
               <button 
                 id="CTAHowToGetStarted"
                 onClick="clickCTA()"
