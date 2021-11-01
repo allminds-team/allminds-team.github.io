@@ -167,12 +167,16 @@
               <div class="text-center text-lg-left">
                 <button 
                   id="CTAHero"
+                  onClick="clickHeroCTA(); this.onclick=null;"
                   class="btn btn-sm btn-primary btn-pill transition-3d-hover mb-3 pl-5 pr-5"
                   style="font-size:1.2rem; font-weight:500; width:100%;">
                   Get Started
                 </button>
-                <!-- Call this function to programmatically trigger a click a CTA click -->
+                <!-- Call clickCTA function to programmatically click #CTAHero -->
                 <script>
+                  function clickHeroCTA() {
+                    fbq('track', 'Initiate checkout');
+                  }
                   function clickCTA() {
                     $("#CTAHero").click();
                   }
