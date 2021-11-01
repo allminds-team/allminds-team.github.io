@@ -113,13 +113,19 @@
 
 
   <script>
-    //Get GCLID from url params 
+    //Get GCLID and FBCLID from url params 
     const urlParams = new URLSearchParams(window.location.search);
     const gclid = urlParams.get('gclid');
+    const fbclid = urlParams.get('fbclid');
     //Pass GCLID to intercom if available
     if (gclid) {
       window.Intercom("update", {
         "GCLID": gclid
+      });
+    }
+    if (fbclid) {
+      window.Intercom("update", {
+        "FBCLID": fbclid
       });
     }
   </script>
