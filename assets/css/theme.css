@@ -382,12 +382,12 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 1200px) {
   h2, .h2 {
-    font-size: calc(1.3125rem + 0.75vw) ;
+    font-size: calc(1.6rem + 0.75vw) ;
   }
 }
 
@@ -2635,7 +2635,7 @@ textarea.form-control {
   padding: 0.75rem 1rem;
   font-size: 1rem;
   line-height: 1.6;
-  border-radius: 0.3125rem;
+  border-radius: 12px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -2670,21 +2670,21 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #377dff;
-  border-color: #377dff;
+  background-color: #2979FF;
+  border-color: #2979FF;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #1164ff;
-  border-color: #045cff;
+  background-color: #2962FF!important;
+  border-color: #2962FF!important;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #1164ff;
-  border-color: #045cff;
-  box-shadow: 0 0 0 0.2rem rgba(85, 145, 255, 0.5);
+  background-color: #2962FF!important;
+  border-color: #2962FF!important;
+  box-shadow: 0 0 0 0.2rem rgba(134, 152, 172, 0.5)!important;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2707,21 +2707,21 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #71869d;
-  border-color: #71869d;
+  background-color: #424242!important;
+  border-color: #424242!important;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5f7389;
-  border-color: #596d82;
+  background-color: #212121!important;
+  border-color: #212121!important;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
   color: #fff;
-  background-color: #5f7389;
-  border-color: #596d82;
-  box-shadow: 0 0 0 0.2rem rgba(134, 152, 172, 0.5);
+  background-color: #212121!important;
+  border-color: #212121!important;
+  box-shadow: 0 0 0 0.2rem rgba(134, 152, 172, 0.5)!important;
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
@@ -3382,14 +3382,14 @@ fieldset:disabled a.btn {
   padding: 1.125rem 1.125rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.5rem;
+  border-radius: 12px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.625rem 1.125rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 12px;
 }
 
 .btn-block {
@@ -4526,8 +4526,7 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding: 0;
   margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
@@ -13311,12 +13310,13 @@ button:focus {
 /* Navbar Brand */
 .navbar-brand,
 .navbar-brand > img {
-  width: 8.5rem;
+  width: 10rem;
 }
 
 /* Navbar Toggler */
 .navbar-toggler {
-  background-color: #f8fafd;
+  background-color: transparent;
+  color: #424242;
 }
 
 .navbar-toggler .navbar-toggler-default {
@@ -14058,6 +14058,16 @@ button:focus {
   background-color: transparent;
 }
 
+.header-bg-transparent:not(.js-header-fix-moment) .nav-transparent .navbar-toggler {
+  color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .header-bg-transparent:not(.js-header-fix-moment) .nav-transparent .nav-link {
+    color: white;
+  }
+}
+
 .header-bg-transparent .navbar-brand-collapsed,
 .header-bg-transparent .navbar-brand-on-scroll {
   display: none;
@@ -14710,7 +14720,7 @@ button:focus {
   }
   .navbar-expand-sm .navbar-brand,
   .navbar-expand-sm .navbar-brand > img {
-    width: 7rem;
+    width: 8.5rem;
   }
   .navbar-expand-sm .navbar-nav {
     margin-top: 1rem;
@@ -14778,7 +14788,7 @@ button:focus {
   }
   .navbar-expand-md .navbar-brand,
   .navbar-expand-md .navbar-brand > img {
-    width: 7rem;
+    width: 8.5rem;
   }
   .navbar-expand-md .navbar-nav {
     margin-top: 1rem;
@@ -14846,7 +14856,7 @@ button:focus {
   }
   .navbar-expand-lg .navbar-brand,
   .navbar-expand-lg .navbar-brand > img {
-    width: 7rem;
+    width: 8.5rem;
   }
   .navbar-expand-lg .navbar-nav {
     margin-top: 1rem;
@@ -14914,7 +14924,7 @@ button:focus {
   }
   .navbar-expand-xl .navbar-brand,
   .navbar-expand-xl .navbar-brand > img {
-    width: 7rem;
+    width: 8.5rem;
   }
   .navbar-expand-xl .navbar-nav {
     margin-top: 1rem;
@@ -14982,7 +14992,7 @@ button:focus {
 
 .navbar-expand .navbar-brand,
 .navbar-expand .navbar-brand > img {
-  width: 7rem;
+  width: 8.5rem;
 }
 
 .navbar-expand .navbar-nav {
@@ -23945,6 +23955,13 @@ a:hover .text-hover-primary {
   color: #90CAF9;
 }
 
+.barChartColumn {
+  border-radius:8px; 
+  color:white; 
+  font-weight:600;
+  padding-top: 8px!important;
+}
+
 .bgSvg {
   position:  absolute;
   top:  100px;
@@ -23999,6 +24016,123 @@ a:hover .text-hover-primary {
   color: #2962FF;
 }
 
+.gradientOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:  0;
+  /*background-color: rgba(0,0,0,0.2);*/
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 65%);
+}
+
+@media only screen and (min-width: 992px) {
+  .gradientOverlay {
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
+
+.heroContainer {
+  height: 100vh;
+  position: relative;
+}
+
+.heroVideo {
+  position: relative;
+}
+
+.heroVideo video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+.heroContentWrapper {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.heroContentWrapper h1 {
+  color: white!important;
+}
+
+  .heroContentWrapper .fa-angle-down {
+    margin-bottom: 96px;
+    cursor: pointer;
+  }
+
+@media only screen and (min-width: 992px) {
+  .heroContentWrapper .fa-angle-down {
+    margin-bottom: 32px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .heroContent {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 96px;
+    padding-right: 96px;
+    margin: 0 auto;
+  }
+}
+
+.howItWorksCard {
+  padding:24px; 
+  padding-top:32px; 
+  border-radius: 24px; 
+  height: 100%;
+  background-color:  rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
+}
+
+.howItWorksImg {
+  max-height: 800px;
+  width:100%; 
+  object-fit: cover; 
+}
+
+@media only screen and (min-width: 992px) {
+  .howItWorksImg {
+    border-radius: 24px;
+  }
+}
+
+.howItWorksRow {
+  overflow-x: auto; 
+  position: relative; 
+  left: 0;
+  right:  0;
+  bottom: 100px; 
+  padding-left: 32px;
+  padding-right:  32px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .howItWorksRow {
+    bottom: 200px; 
+  }
+}
+
 .featureImg {
   max-width:  200%;
   position:  relative;
@@ -24016,9 +24150,70 @@ a:hover .text-hover-primary {
   font-weight: 600;
 }
 
+.iFrameSendGrid form {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .mainContainer {
+    max-width: 1200px;
+    padding-left: 96px;
+    padding-right: 96px;
+    margin: auto;
+  }
+}
+
 .nav-disabled a {
   pointer-events: none;
   color: #BDBDBD!important;
+}
+
+.navBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.providersRow {
+  overflow-x: auto; 
+  padding-left: 32px;
+  padding-right:  32px;
+/*  margin-left: 0px;
+  margin-right: 0px;*/
+}
+
+.providersCard {
+  border-radius: 24px; 
+  position: relative;
+  overflow: hidden;
+  /*height: 100%;*/
+  background-color:  rgba(255,255,255,1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
+}
+
+.providersCardText {
+  position:  absolute;
+  bottom:  0;
+  left:  0px;
+  right:  0px;
+  border-radius:  0px 0px 24px 24px;
+  padding: 16px;
+  background-color:  rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.providersCard img {
+  width:  100%;
+  border-radius: 24px;
+  box-sizing: border-box;
 }
 
 .subtitle {
