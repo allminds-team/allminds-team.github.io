@@ -53,20 +53,19 @@
 
   <!-- Event snippet for Submit client assessment conversion page
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-  <script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-432419184/9mdGCJ_WkfcCEPDimM4B',
-        'event_callback': callback
-    });
-    return false;
-  }
-  </script>
+<script>
+  window.addEventListener('load', function(){
+    jQuery('#mc-embedded-subscribe-form').submit(function(){
+      var chk = setInterval(function(){
+        if(jQuery('#mce-success-response').is(':visible')){
+          gtag('event', 'conversion', {'send_to': 'AW-432419184/9mdGCJ_WkfcCEPDimM4B'});
+          clearInterval(chk);
+        }
+
+      },1000);
+
+    })
+  });
 
   <!-- Facebook Pixel Code -->
   <script>
