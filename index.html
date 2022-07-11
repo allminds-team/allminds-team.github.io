@@ -51,7 +51,7 @@
     gtag('config', 'AW-432419184');
   </script>
 
-  <!-- Event snippet for Submit client assessment conversion page
+  <!-- Event snippet for Click Start Therapy conversion page
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
   <script>
   function gtag_report_conversion(url) {
@@ -61,9 +61,13 @@
       }
     };
     gtag('event', 'conversion', {
-        'send_to': 'AW-432419184/9mdGCJ_WkfcCEPDimM4B',
+        'send_to': 'AW-432419184/mCzhCLzb3cwDEPDimM4B',
         'event_callback': callback
     });
+    //Add timeout to redirect in case user has an ad blocker
+    setTimeout(function() {
+      callback();
+    }, 1000)
     return false;
   }
   </script>
@@ -88,16 +92,7 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
 
-  <!-- Conversions to track on Typeform Submit -->
-  <script>
-    function submitTypeform(event) {
-      //Facebook lead
-      fbq('track', 'Lead');
-      //Google ad conversion
-      gtag_report_conversion();
-    };
-  </script>
-  <!-- End Conversions to track on Typeform Submit  -->
+
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -113,7 +108,7 @@
       <script>
         $(function(){
           $("#nav-placeholder").load("nav.html", function(){
-            $("#CTABtn").append('<a href="https://app.getallminds.com/matching" class="btn btn-primary btn-sm ml-lg-3 mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Start therapy</a>');
+            $("#CTABtn").append('<button onclick="gtag_report_conversion(&quot;https://app.getallminds.com/matching&quot;)" class="btn btn-primary btn-sm ml-lg-3 mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Start therapy</button>');
           });
         });
       </script>
@@ -137,9 +132,9 @@
         <div class="heroContent">
           <div  style="max-width:600px">
             <h1 class="display-3 mb-6">Finally, therapy for everyone</h1>
-            <p class="lead mb-6 d-none d-lg-block">Allminds is a team of culturally competent mental health professionals who are devoted to helping you feel better. We believe in personal, high-quality mental health care for everyone, from anywhere.</p>
+            <p class="lead mb-6 d-none d-lg-block">Allminds is a team of culturally sensitive mental health professionals who are devoted to helping you feel better. We believe in personal, high-quality mental health care for everyone, from anywhere.</p>
             <div class="w-100 mb-5">
-              <a href="https://app.getallminds.com/matching" class="btn btn-lg btn-primary">Start therapy</a>
+              <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-lg btn-primary">Start therapy</button>
             </div>
           </div>
         </div>
@@ -157,7 +152,7 @@
 
     <!-- Bottom nav -->
     <div id="navBottom" class="navBottom d-lg-none">
-      <a href="https://app.getallminds.com/matching" class="btn btn-primary w-100">Start therapy</a>
+      <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-primary w-100">Start therapy</button>
     </div>
     <!-- Bottom nav -->
 
@@ -210,7 +205,7 @@
                 <img src="./assets/svg/logos/allmindsLogo.svg" alt="Allminds logo" class="mb-3" style="width: 32px;color:#2979FF" />
                 <h4 class="mb-5">Ready to get started?</h4>
                 <div class="w-100 d-flex justify-content-center">
-                  <a href="https://app.getallminds.com/matching" class="btn btn-primary">Find your therapist</a>
+                  <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-primary">Find your therapist</button>
                 </div>
               </div>
             </div>
@@ -314,7 +309,7 @@
         <div class="w-md-80 text-center mx-md-auto">
           <h2>Ready to start therapy?</h2>
           <div class="w-100 mt-5 d-flex justify-content-center">
-            <a href="https://app.getallminds.com/matching" class="btn btn-lg btn-secondary mb-3">Find my therapist</a>
+            <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-lg btn-secondary mb-3">Find my therapist</button>
           </div>
         </div>
         <!-- End Title -->

@@ -49,23 +49,25 @@
     gtag('config', 'UA-155248021-1');
     gtag('config', 'AW-432419184');
   </script>
-  <!-- Event snippet for Click - try for free conversion page
+  <!-- Event snippet for Click Start Therapy conversion page
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-432419184/Sw9fCMib8_MBEPDimM4B',
-          'event_callback': callback
-      });
-      //For users with adblockers => redirect after 2 seconds
-      setTimeout(function(){ window.location = url; }, 2000);
-      return false;
-    }
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-432419184/mCzhCLzb3cwDEPDimM4B',
+        'event_callback': callback
+    });
+    //Add timeout to redirect in case user has an ad blocker
+    setTimeout(function() {
+      callback();
+    }, 1000)
+    return false;
+  }
   </script>
   <!-- Facebook Pixel Code -->
   <script>
@@ -101,7 +103,7 @@
       <script>
         $(function(){
           $("#nav-placeholder").load("nav.html", function(){
-            $("#CTABtn").append('<a href="https://app.getallminds.com/matching" class="btn btn-primary btn-sm ml-lg-3 mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Start therapy</a>');
+            $("#CTABtn").append('<button onclick="gtag_report_conversion(&quot;https://app.getallminds.com/matching&quot;)" class="btn btn-primary btn-sm ml-lg-3 mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Start therapy</button>');
           });
         });
       </script>
