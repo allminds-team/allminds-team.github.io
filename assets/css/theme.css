@@ -24130,6 +24130,14 @@ a:hover .text-hover-primary {
 @media only screen and (min-width: 992px) {
   .howItWorksRow {
     bottom: 200px; 
+    overflow-x: visible;
+    left:  -96px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .howItWorksRow {
+    left:  -128px;
   }
 }
 
