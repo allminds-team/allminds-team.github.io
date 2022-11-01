@@ -2676,14 +2676,10 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #2962FF!important;
-  border-color: #2962FF!important;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #2962FF!important;
-  border-color: #2962FF!important;
   box-shadow: 0 0 0 0.2rem rgba(134, 152, 172, 0.5)!important;
 }
 
@@ -4531,10 +4527,12 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  color:  white;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+  color:  white;
 }
 
 .navbar-nav {
@@ -13336,6 +13334,11 @@ button:focus {
   z-index: 1001;
 }
 
+.header.scrolled .navbar-brand {
+  color:  #AD1457;
+  transition:  color 0.2s ease-in;
+}
+
 .header-section {
   position: relative;
   z-index: 1;
@@ -13356,7 +13359,8 @@ button:focus {
 
 /* Navbar Brand */
 .navbar-brand,
-.navbar-brand > img {
+.navbar-brand > img,
+.navbar-brand > svg {
   width: 10rem;
 }
 
@@ -14766,7 +14770,8 @@ button:focus {
     padding-bottom: 0.5rem;
   }
   .navbar-expand-sm .navbar-brand,
-  .navbar-expand-sm .navbar-brand > img {
+  .navbar-expand-sm .navbar-brand > img,
+  .navbar-expand-sm .navbar-brand > svg {
     width: 8.5rem;
   }
   .navbar-expand-sm .navbar-nav {
@@ -14834,7 +14839,8 @@ button:focus {
     padding-bottom: 0.5rem;
   }
   .navbar-expand-md .navbar-brand,
-  .navbar-expand-md .navbar-brand > img {
+  .navbar-expand-md .navbar-brand > img,
+  .navbar-expand-md .navbar-brand > svg {
     width: 8.5rem;
   }
   .navbar-expand-md .navbar-nav {
@@ -14902,7 +14908,8 @@ button:focus {
     padding-bottom: 0.5rem;
   }
   .navbar-expand-lg .navbar-brand,
-  .navbar-expand-lg .navbar-brand > img {
+  .navbar-expand-lg .navbar-brand > img,
+  .navbar-expand-lg .navbar-brand > svg {
     width: 8.5rem;
   }
   .navbar-expand-lg .navbar-nav {
@@ -14970,7 +14977,8 @@ button:focus {
     padding-bottom: 0.5rem;
   }
   .navbar-expand-xl .navbar-brand,
-  .navbar-expand-xl .navbar-brand > img {
+  .navbar-expand-xl .navbar-brand > img,
+  .navbar-expand-xl .navbar-brand > svg {
     width: 8.5rem;
   }
   .navbar-expand-xl .navbar-nav {
@@ -15038,7 +15046,8 @@ button:focus {
 }
 
 .navbar-expand .navbar-brand,
-.navbar-expand .navbar-brand > img {
+.navbar-expand .navbar-brand > img,
+.navbar-expand .navbar-brand > svg {
   width: 8.5rem;
 }
 
@@ -16798,13 +16807,13 @@ a.badge-soft-navy:hover, a.badge-soft-navy:focus {
 }
 
 .btn-primary:not(label.btn), .btn-primary:not(label.btn):not([href]):not(:disabled):not(.disabled), .btn-primary:not([href]), .btn-primary:not([href]):not([href]):not(:disabled):not(.disabled) {
-  background-color: #377dff;
-  border-color: #377dff;
+  background-color: #AD1457;
+  border-color: #AD1457;
 }
 
 .btn-primary:hover {
-  background-color: #377dff;
-  border-color: #377dff;
+  background-color: #C51162!important;
+  border-color: #C51162!important;
 }
 
 /* secondary button :hover, :focus, :active effects */
@@ -24145,9 +24154,6 @@ a:hover .text-hover-primary {
   border-radius: 24px; 
   height: 100%;
   background-color:  rgba(255,255,255,0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
 }
 
 .howItWorksImg {
@@ -24386,7 +24392,12 @@ input.email:focus {
     url("../fonts/AirbnbCerealBlack.ttf") format("truetype");
 }
 
-
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src:url("../fonts/Merriweather-Regular.ttf") format("truetype");
+}
 
 body {
   font-family: 'Cereal', Fallback, sans-serif!important;
