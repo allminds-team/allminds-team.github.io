@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Allminds: Find a Therapist who Gets Your Culture</title>
+  <title>Allminds: Your Path to Better Mental Health</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="Description" content="If you're looking for a diverse therapist who takes your insurance, you've come to the right place.">
+  <meta name="Description" content="Navigate towards a healthier, happier life with a compassionate therapist devoted to helping you.">
   <meta property="og:url"                content="https://www.getallminds.com" />
   <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="Allminds: Find a Therapist who Gets Your Culture" />
-  <meta property="og:description"        content="If you're looking for a diverse therapist who takes your insurance, you've come to the right place." />
+  <meta property="og:title"              content="Allminds: Your Path to Better Mental Health" />
+  <meta property="og:description"        content="Navigate towards a healthier, happier life with a compassionate therapist devoted to helping you." />
   <meta property="og:image"              content="https://www.getallminds.com/assets/img/referrals/womanPhone.png" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Allminds: Find a Therapist who Gets Your Culture">
-  <meta name="twitter:description" content="If you're looking for a diverse therapist who takes your insurance, you've come to the right place.">
+  <meta name="twitter:title" content="Allminds: Your Path to Better Mental Health">
+  <meta name="twitter:description" content="Navigate towards a healthier, happier life with a compassionate therapist devoted to helping you.">
   <meta name="twitter:image" content="https://www.getallminds.com/assets/img/referrals/womanPhone.png">
   <meta name="facebook-domain-verification" content="jcoa61fp7asn31e587iycq3bk34t0o" />
 
@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
   <link rel="stylesheet" href="./assets/vendor/fancybox/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="./assets/css/theme.css">
@@ -37,6 +38,7 @@
     <!-- JS Global Compulsory -->
   <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
@@ -108,7 +110,8 @@
       <script>
         $(function(){
           $("#nav-placeholder").load("nav.html", function(){
-            $("#CTABtn").append('<button onclick="gtag_report_conversion(&quot;https://app.getallminds.com/matching&quot;)" class="btn btn-primary btn-sm ml-lg-3 mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Get care</button>');
+            $("#CTABtn").append('<button onclick="gtag_report_conversion(&quot;https://app.getallminds.com/matching&quot;)" class="btn btn-primary btn-sm mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Get care</button>');
+            $("#LogInBtn").append('<a class="btn btn-sm btn-secondary mb-2 mb-lg-0" href="https://app.getallminds.com/login">Log in</a>');
           });
         });
       </script>
@@ -131,10 +134,10 @@
       <div class="heroContentWrapper">
         <div class="heroContent">
           <div  style="max-width:700px">
-            <h1 class="display-3 mb-6">Find a therapist who gets your culture</h1>
-            <p class="lead mb-6 d-none d-lg-block">Allminds is a team of culturally inclusive mental health professionals who are devoted to helping you feel better. We believe in affordable, high-quality mental health care for everyone.</p>
+            <h1 class="display-3 mb-6">Your Path to Better Mental Health</h1>
+            <p class="lead mb-6 d-none d-lg-block">Navigate towards a healthier, happier life with a compassionate therapist devoted to helping you.</p>
             <div class="w-100 mb-5">
-              <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-lg btn-primary">Find your therapist</button>
+              <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-lg btn-primary">Book Appointment</button>
             </div>
           </div>
         </div>
@@ -152,7 +155,7 @@
 
     <!-- Bottom nav -->
     <div id="navBottom" class="navBottom d-lg-none">
-      <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-primary w-100">Find your therapist</button>
+      <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-primary w-100">Book appointment</button>
     </div>
     <!-- Bottom nav -->
 
@@ -162,186 +165,296 @@
       <div class="pl-0 pr-0">
 
         <div class="d-lg-none space-top-2 space-bottom-2 pl-5 pl-lg-0 pr-5 pr-lg-0" style="background-color: #F5f5f5">
-            <p class="lead">Allminds is a team of culturally competent mental health professionals who are devoted to helping you feel better. We believe in personal, high-quality mental health care for everyone, from anywhere.</p>
+            <p class="lead">Navigate towards a healthier, happier life with a compassionate therapist devoted to helping you.</p>
         </div>   
 
         <div class=" space-top-3 space-top-lg-4 space-bottom-2 pr-5 pl-5 pl-lg-0 pr-lg-0">
 
-          <h2 class="mb-8">Get inclusive care, tailored to your needs</h2>
-          <div class="row m-0">
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pr-md-3">
-              <div class="howItWorksCard" style="background-color: #FFEBEE;">
-                <i class="fa-solid fa-user-check mb-3 fa-2x" style="color:#2979FF"></i>
-                <h4 class="mb-3" style="color: #2979FF!important">Choose an inclusive therapist</h4>
-                <p class="mb-0">Our team of therapists is 60% non-white and we are fluent in Spanish, Hindi, Tagalog and more.</p>
+          <h2 class="mb-8 text-center">Discover Your Ideal Therapeutic Match</h2>
+          <p class="mb-10 text-center">Exceptional therapy begins with a perfect match. That’s why we pair you with culturally sensitive experts trained to prioritize your needs and highlight your strengths.</p>
+          <div class="row justify-content-between align-items-start">
+            <div class="col-12 col-lg-5 mb-0">
+              <div class="howItWorksCard mb-3" style="display: flex;">
+                <i class="fa-regular fa-star fa-2x" style="color: #FFAB00; min-width: 36px;"></i>
+                <h4 class="ml-3 mb-0">Explore over 80 specialties, including Depression, Anxiety, and ADHD.</h4>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pl-md-3 pr-lg-3">
-              <div class="howItWorksCard" style="background-color: #FFEBEE;">
-                <i class="fa-solid fa-scale-balanced mb-3 fa-2x" style="color:#2979FF"></i>
-                <h4 class="mb-3" style="color: #2979FF!important">Put your culture first</h4>
-                <p class="mb-0">Our therapists are trained to place your culture and life experiences at the center of your therapy.</p>
+              <div class="howItWorksCard mb-3" style="display: flex;">
+                <i class="fa-regular fa-bookmark fa-2x" style="color: #AD1457; min-width: 36px;"></i>
+                <h4 class="ml-3 mb-0">Choose from 70+ therapeutic techniques like CBT, EMDR, and DBT.</h4>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pl-lg-3 pr-md-3 pr-lg-0">
-              <div class="howItWorksCard" style="background-color: #FFEBEE;">
-                <i class="fa-solid fa-chart-column mb-3 fa-2x" style="color:#2979FF"></i>
-                <h4 class="mb-3" style="color: #2979FF!important">Get world-class care</h4>
-                <p class="mb-4">We only use scientifically proven methods to help you feel better. Research shows that our practices deliver better outcomes.</p>
+              <div class="howItWorksCard" style="display: flex;">
+                <i class="fa-regular fa-hand-back-fist fa-2x" style="color: #734737; min-width: 36px;"></i>
+                <h4 class="ml-3 mb-0">Benefit from our diverse team, with 60% of our therapists coming from varied racial backgrounds.</h4>
               </div>
-            </div>
-          </div>
 
-          <h2 class="mt-11 mb-8">Save money on your care</h2>
-          <div class="row m-0">
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pr-md-3">
-              <div class="howItWorksCard" style="background-color: #EDE7F6;">
-                <i class="fa-solid fa-shield-heart mb-3 fa-2x" style="color:#00BFA5"></i>
-                <h4 class="mb-3" style="color: #004D40!important">Use your insurance</h4>
-                <p class="mb-0">We make it easy to use your insurance so you pay just $0-$20 per session.</p>
+              <div class="d-none d-lg-block w-100 mt-7 text-center">
+                <h4 class="mb-3">Are you a talented, mission-driven clinician?</h4>
+                <div class="d-flex justify-content-center" style="gap: 16px;">
+                  <a href="https://careers.hireology.com/allminds/1745215/description" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary-outlined">Join our team</a>
+                  <a href="./providers.html" class="btn btn-lg btn-secondary-outlined">Learn more</a>
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pl-md-3 pr-lg-3">
-              <div class="howItWorksCard" style="background-color: #EDE7F6;">
-                <i class="fa-solid fa-piggy-bank mb-3 fa-2x" style="color:#00BFA5"></i>
-                <h4 class="mb-3" style="color: #004D40!important">Pay less out of pocket</h4>
-                <p class="mb-0">Even if you're not covered by insurance, our out-of-pocket rates are are 2X lower than average.</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pl-lg-3 pr-md-3 pr-lg-0">
-              <div class="howItWorksCard" style="background-color: #EDE7F6;">
-                <i class="fa-solid fa-seedling mb-3 fa-2x" style="color:#00BFA5"></i>
-                <h4 class="mb-3" style="color: #004D40!important">Feel better faster</h4>
-                <p class="mb-4">We believe in short-term and goal-focused therapy. So you can feel better in 6-10 sessions rather than 16.</p>
-              </div>
-            </div>
-          </div>
 
-          <h2 class="mt-11 mb-8">Get flexible care that fits your life</h2>
-          <div class="row m-0">
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pr-md-3">
-              <div class="howItWorksCard" style="background-color: #FBE9E7;">
-                <i class="fa-solid fa-video mb-3 fa-2x" style="color:#4A148C"></i>
-                <h4 class="mb-3" style="color: #4A148C!important">Connect anywhere, anytime</h4>
-                <p class="mb-0">Connect with your therapist on evenings, weekends, or whenever works best for you - from the comfort of your home.</p>
-              </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pl-md-3 pr-lg-3">
-              <div class="howItWorksCard" style="background-color: #FBE9E7;">
-                <i class="fa-solid fa-calendar-check mb-3 fa-2x" style="color:#4A148C"></i>
-                <h4 class="mb-3" style="color: #4A148C!important">Instant, flexible bookings</h4>
-                <p class="mb-0">Book and reschedule appointments online, directly into your therapist's calendar.</p>
+            <div class="col-12 col-lg-6 mb-0 mt-8 mt-lg-0">
+              <!-- Testimonials -->
+              <div class="">
+                <!-- Swiper Slider -->
+                <div class="js-swiper-single-testimonials swiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- Blockquote -->
+                      <figure class="text-center mx-auto">
+                        <div class="mb-5">
+                          <img class="providerProfilePhoto" src="https://firebasestorage.googleapis.com/v0/b/allmindstherapy.appspot.com/o/abradley.png?alt=media&token=cb81cf89-99c9-40f4-a8b1-03cbf7638fdc" alt="Photo of Allminds clinician Angelequea Bradley">
+                        </div>
+
+                        <blockquote class="blockquote" style="font-family: Merriweather; color: #424242;">“My role is to support and guide you in recognizing underlying emotional patterns and re-learning these to allow you to live your best quality of life.”</blockquote>
+
+                        <figcaption class="blockquote-footer mb-5">
+                          Angelequa Bradley, LCSW
+                        </figcaption>
+                      </figure>
+                      <!-- End Blockquote -->
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- Blockquote -->
+                      <figure class="text-center mx-auto">
+                        <div class="mb-5">
+                          <img class="providerProfilePhoto" src="https://firebasestorage.googleapis.com/v0/b/allmindstherapy.appspot.com/o/emedinacolon.png?alt=media&token=1e8ec62a-a665-496b-aa5e-ad5b80e6b0c2" alt="Photo of Allminds clinician Edgardo Medina-Colon">
+                        </div>
+
+                        <blockquote class="blockquote" style="font-family: Merriweather; color: #424242;">“I believe that with the right readiness, support, practices, and a clear life purpose any human can tap into their own inner wisdom and self-healing.”</blockquote>
+
+                        <figcaption class="blockquote-footer mb-5">
+                          Edgardo Medina Colon, LCSW
+                        </figcaption>
+                      </figure>
+                      <!-- End Blockquote -->
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- Blockquote -->
+                      <figure class="text-center mx-auto">
+                        <div class="mb-5">
+                          <img class="providerProfilePhoto" src="https://firebasestorage.googleapis.com/v0/b/allmindstherapy.appspot.com/o/towens.png?alt=media&token=280f70e9-fb1d-4694-b510-f816c29f6657" alt="Photo of Allminds clinician Tosha Owens">
+                        </div>
+                        <blockquote class="blockquote" style="font-family: Merriweather; color: #424242;">“I value providing a safe, warm, non-judgmental, direct, and compassionate space. I listen actively and provide support and guidance to help you become the best version of yourself.”</blockquote>
+                        <figcaption class="blockquote-footer mb-5">
+                          Tosha Owens, LPCC
+                        </figcaption>
+                      </figure>
+                      <!-- End Blockquote -->
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- Blockquote -->
+                      <figure class="text-center mx-auto">
+                        <div class="mb-5">
+                          <img class="providerProfilePhoto" src="https://firebasestorage.googleapis.com/v0/b/allmindstherapy.appspot.com/o/flei.png?alt=media&token=35e4f854-349e-43db-b9c5-bc5fe19c67cc" alt="Photo of Allminds clinician Freda Lei">
+                        </div>
+                        <blockquote class="blockquote" style="font-family: Merriweather; color: #424242;">“Your past, present, and future are all connected. I am passionate about exploring how what you have learned in the past is now either enhancing or hindering your personal growth.”</blockquote>
+                        <figcaption class="blockquote-footer mb-5">
+                          Freda Hio Tong Lei, LCSW
+                        </figcaption>
+                      </figure>
+                      <!-- End Blockquote -->
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- Blockquote -->
+                      <figure class="text-center mx-auto">
+                        <div class="mb-5">
+                          <img class="providerProfilePhoto" src="https://firebasestorage.googleapis.com/v0/b/allmindstherapy.appspot.com/o/tchang.png?alt=media&token=47e57eda-22aa-4c26-b260-e37c4fae8fb8" alt="Photo of Allminds clinician Tate Chang">
+                        </div>
+                        <blockquote class="blockquote" style="font-family: Merriweather; color: #424242;">“We go on a journey together to better understand yourself and your story and learn to provide compassion to parts that have been neglected or misunderstood.”</blockquote>
+                        <figcaption class="blockquote-footer mb-5">
+                          Tate Chang, LPCC
+                        </figcaption>
+                      </figure>
+                      <!-- End Blockquote -->
+                    </div>
+                    <!-- End Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- Blockquote -->
+                      <figure class="text-center mx-auto">
+                        <div class="mb-5">
+                          <img class="providerProfilePhoto" src="https://firebasestorage.googleapis.com/v0/b/allmindstherapy.appspot.com/o/sjackson.png?alt=media&token=a49f081f-a966-469f-b1a0-55b24b53ba63" alt="Photo of Allminds clinician Sara Jackson">
+                        </div>
+                        <blockquote class="blockquote" style="font-family: Merriweather; color: #424242;">“It can be challenging to navigate our emotional responses in a world in which we have little control. Sometimes, we just need someone to sit in the chaos with us so that we can figure our way out.”</blockquote>
+                        <figcaption class="blockquote-footer mb-5">
+                          Sara Jackson, LPCC
+                        </figcaption>
+                      </figure>
+                      <!-- End Blockquote -->
+                    </div>
+                    <!-- End Slide -->
+                  </div>
+
+                  <!-- Pagination -->
+                  <div class="js-swiper-single-testimonials-pagination swiper-pagination"></div>
+                </div>
+                <!-- End Swiper Slider -->
               </div>
+              <!-- End Testimonials -->
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 pl-0 pr-0 pl-lg-3 pr-md-3 pr-lg-0">
-              <div class="howItWorksCard" style="background-color: #FBE9E7;">
-                <i class="fa-solid fa-file-medical mb-3 fa-2x" style="color:#4A148C"></i>
-                <h4 class="mb-3" style="color: #4A148C!important">Hassle-free insurance</h4>
-                <p class="mb-4">We'll instantly look up your benefits and charge you only what you owe. The best part? We'll handle all the paperwork with your insurance.</p>
+            <div class="d-lg-none w-100 mt-7 text-center">
+              <h4 class="mb-3">Are you a talented, mission-driven clinician?</h4>
+              <div class="d-flex justify-content-center" style="gap: 16px;">
+                <button class="btn btn-lg btn-secondary-outlined">Join our team</button>
+                <a href="./providers.html" class="btn btn-lg btn-secondary-outlined">Learn more</a>
               </div>
             </div>
           </div>
 
         </div>
-
-        <div class="space-top-3 space-bottom-2 pr-5 pr-lg-0 pl-5 pl-lg-0">
-          <!-- SVG Quote -->
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 8 8">
-              <path fill="#EEEEEE" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
-                C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
-                c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
-                C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
-            </svg>
-          </figure>
-          <!-- End SVG Quote -->
-          <blockquote class="h1 font-weight-normal mb-5" style="font-family: Merriweather;">
-            With Allminds, the experience of finding a therapist was incredibly personal and friendly. I felt supported and empowered to choose the right provider for me.
-          </blockquote>
-          <p class="lead mb-0">Paula chose Allminds for the one-to-one, human approach.</p>
-        </div>
-
-
-        <div class=" space-top-4 space-bottom-3">
-          <div class="pr-5 pr-lg-0 pl-5 pl-lg-0">
-            <h2 class="mb-5">Expert care, every step of the way</h2>
-            <p class="mb-10">Great therapy stems from a strong relationship with your therapist. Which is why we'll only pair you with culturally inclusive experts who have been trained to center your needs and celebrate your strengths.</p>
-            <div class="row justify-content-between align-items-center">
-              <div class="col-12 col-lg-5 mb-0">
-                <img class="w-100" src="./assets/img/referrals/tangiaElieff.png" alt="Tangia Elieff" style="border-radius:24px" />
-              </div>
-              <div class="col-12 col-lg-6 mb-0 mt-8 mt-lg-0">
-                <!-- SVG Quote -->
-                <figure>
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 8 8">
-                    <path fill="#EEEEEE" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
-                      C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
-                      c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
-                      C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
-                  </svg>
-                </figure>
-                <!-- End SVG Quote -->    
-                <blockquote class="h1 font-weight-normal mb-5 font-size-2 font-size-lg-5" style="font-family: Merriweather; z-index:1;">
-                  I’m passionate about creating a space where People of Color can feel more comfortable seeking support and receiving the healing that is owed to them.
-                </blockquote>
-                <p class="lead mb-0">— Tangia Hardy, Allminds Practice Owner</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
 
       </div> 
       <!-- End Features Section -->
 
+      <div class="space-top-3 space-bottom-2">
+        <div class="row pr-5 pl-5 m-0 mb-2 align-items-center">
+          <div class="col-12 col-lg-5 p-0 pr-lg-7">
+            <div class="space-bottom-2 pr-0 pl-0 text-center text-lg-left">
+              <h2 class="mb-5">Take the Guesswork out of Therapy</h2>
+              <p class="lead mt-5 mb-0">Work with your therapist to develop a personalized plan that delivers tangible improvements.</p>
+            </div>            
+          </div>
+          <div class="col-12 col-lg-7 p-0 pl-lg-7 mb-5 d-flex flex-column justify-content-between">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-solid fa-seedling mb-3 fa-2x" style="color:#00BFA5"></i>
+                  <h4 class="mb-3">Personalized Planning</h4>
+                  <p class="mb-0">Set clear goals and steps to achieve your mental health objectives.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-regular fa-comment mb-3 fa-2x" style="color:#00BFA5"></i>
+                  <h4 class="mb-3">Consistent 1-1 Sessions</h4>
+                  <p class="mb-0">Weekly meetings with your therapist to progress towards your goals.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-solid fa-chart-line mb-3 fa-2x" style="color:#00BFA5"></i>
+                  <h4 class="mb-3">Clinical Assessments</h4>
+                  <p class="mb-0">Weekly evaluations to track your progress and refine your treatment.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-regular fa-heart mb-3 fa-2x" style="color:#00BFA5"></i>
+                  <h4 class="mb-3">Open Communication</h4>
+                  <p class="mb-0">Provide feedback in each session to enhance your therapeutic relationship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="space-top-2 space-bottom-2">
+
+        <div class="row pr-5 pl-5 m-0 mb-2 align-items-center">
+          <div class="col-12 col-lg-5 order-lg-2 p-0 pl-lg-7">
+            <div class="space-bottom-2 pr-0 pl-0 text-center text-lg-left">
+              <h2 class="mb-5">Manage Your Therapy on Your Terms</h2>
+              <p class="lead mt-5 mb-0">The Allminds portal offers complete control over your scheduling, communication, and administrative needs.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 order-lg-1 p-0 pr-lg-7 mb-5 d-flex flex-column justify-content-between">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-regular fa-calendar mb-3 fa-2x" style="color:#2979FF"></i>
+                  <h4 class="mb-3">Online Scheduling</h4>
+                  <p class="mb-0">Book and adjust your appointments directly within your therapist's calendar.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-regular fa-message mb-3 fa-2x" style="color:#2979FF"></i>
+                  <h4 class="mb-3">Secure Messaging</h4>
+                  <p class="mb-0">Stay in touch with your therapist securely and conveniently.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-regular fa-credit-card mb-3 fa-2x" style="color:#2979FF"></i>
+                  <h4 class="mb-3">Hassle-free Insurance</h4>
+                  <p class="mb-0">Easily verify your benefits and we handle all billing logistics—you only pay your co-pay.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-5">
+                <div class="howItWorksCard">
+                  <i class="fa-solid fa-headset mb-3 fa-2x" style="color:#2979FF"></i>
+                  <h4 class="mb-3">Dedicated Support</h4>
+                  <p class="mb-0">Access our care and tech support teams for any assistance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
       <!-- FAQ Section -->
-      <div class="pl-5 pl-lg-0 pr-5 pr-lg-0 space-top-3 space-bottom-2">
+      <div class="pl-5 pl-lg-0 pr-5 pr-lg-0 space-top-2 space-bottom-2">
         <div class="mb-11">
           <h2>Frequently asked questions</h2>
         </div>
         <div class="row">
-          <div class="col-md-6 mb-3 mb-md-5">
-            <div>
-              <h4>Is Allminds right for me?</h4>
-              <p>If you think you may be experiencing a mental health condition and are ready to start feeling better, you’ve come to the right place. If you're not sure, we can help you decide with a free initial consultation, without commitment.</p>
+          <div class="col-lg-6 mb-3 mb-lg-5 pr-lg-7">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-12 mb-3 mb-md-5">
+                <h4>What will I get out of therapy?</h4>
+                <p>You'll get one-on one-support with a licensed therapist through weekly video meetings. You will learn proven techniques such as CBT and mindfulness to help you cope with life issues including depression, anxiety, trauma, and more.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12 mb-3 mb-md-5">
+                <h4>Do you take insurance?</h4>
+                <p>We are proud to accept a growing number of insurance plans. You can start booking an appointment to see if we accept yours. If we do, we will handle all the billing & paperwork!</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12 mb-3 mb-md-5">
+                <h4>Do I get to choose my own therapist?</h4>
+                <p>Yes! You will choose from our available therapists based on your personal needs and preferences. At any point in your care, you may switch therapists if it's not a perfect fit.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12 mb-3 mb-md-5">
+                <h4>How often can I see my therapist?</h4>
+                <p>You will start with weekly sessions. Your provider will help you set the right therapeutic goals and will work with you until you have met them.</p>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3 mb-md-5">
-            <div>
-              <h4>What will I get out of therapy?</h4>
-              <p>You'll get one-on one-support from home (via video) with a licensed therapist. You will learn proven techniques such as CBT and mindfulness to help you cope with life issues such as: self-esteem, stress, relationship struggles, grief, and more.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3 mb-md-5">
-            <div>
-              <h4>Do I get to choose my own therapist?</h4>
-              <p>Yes! We will first suggest therapists who match your needs and preferences. You can then have a free consultation with your preferred provider to make sure they're the right fit. Or you can book your first session and get started right away.</p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mb-md-5">
-            <div>
-              <h4>How often will I see my therapist?</h4>
-              <p>Most people go to therapy once a week, but you are free to choose your own pace. Your therapist will help you determine what's best for you.</p>
-            </div>
-          </div>
-          <div class="col-12 text-center mt-5">
-            <p>Have more questions about Allminds?</p>
-            <i class="far fa-envelope mr-2"></i>
-            <a href="mailto:hello@allminds.io"><strong>hello@allminds.io</strong></a>
+          <div class="col-lg-6 mb-3 mb-lg-5 pl-lg-7">
+            <div class="teamPhotoContainer">
+              <img src="./assets/img/referrals/manChair.jpg" alt="Man sitting on chair on video call"/>
+            </div>  
           </div>
         </div>
       </div>
       <!-- End FAQ Section --> 
 
       <!-- Bottom CTA -->
-      <div class="space-top-3 space-bottom-5 pl-5 pl-lg-0 pr-5 pr-lg-0">
+      <div class="space-top-2 space-bottom-5 pl-5 pl-lg-0 pr-5 pr-lg-0">
         <!-- Title -->
         <div class="w-md-80 text-center mx-md-auto">
-          <h2>Not sure if therapy is right for you?</h2>
+          <h2>Start Your Mental Health Journey</h2>
           <div class="w-100 mt-5 d-flex justify-content-center">
-            <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-lg btn-secondary mb-3">Book a free consultation</button>
+            <button onclick="gtag_report_conversion('https://app.getallminds.com/matching')" class="btn btn-lg btn-secondary mb-3">Get Paired with a Therapist</button>
           </div>
         </div>
         <!-- End Title -->
@@ -374,6 +487,7 @@
   <script src="./assets/vendor/circles/circles.min.js"></script>
   <script src="./assets/vendor/aos/dist/aos.js"></script>
   <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- JS Front -->
   <script src="./assets/js/hs.core.js"></script>
@@ -421,6 +535,20 @@
       // initialization of form validation
       $('.js-validate').each(function () {
         var validation = $.HSCore.components.HSValidation.init($(this));
+      });
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper-single-testimonials', {
+        speed: 500,
+        spaceBetween: 64,
+        pagination: {
+          el: '.js-swiper-single-testimonials-pagination',
+          clickable: true,
+        },
+        autoplay : {
+          delay: 3000
+        }
       });
 
       //For mobile: show bottom navigation bar after user scrolls past hero

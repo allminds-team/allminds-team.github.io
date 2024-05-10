@@ -1,40 +1,16 @@
 {
-  "_args": [
-    [
-      "typed.js@2.0.9",
-      "D:\\wamp\\www\\front-v1.0"
-    ]
-  ],
-  "_from": "typed.js@2.0.9",
-  "_id": "typed.js@2.0.9",
-  "_inBundle": false,
-  "_integrity": "sha512-RTv7MvbsJ0ajz3PW/o325kXo0+gZAGW9xoZQ9eXrdvTg9prvH5JgAVeAITYuh7OoGStl1yuJgcR07IO10l3Q3g==",
-  "_location": "/typed.js",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "typed.js@2.0.9",
-    "name": "typed.js",
-    "escapedName": "typed.js",
-    "rawSpec": "2.0.9",
-    "saveSpec": null,
-    "fetchSpec": "2.0.9"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/typed.js/-/typed.js-2.0.9.tgz",
-  "_spec": "2.0.9",
-  "_where": "D:\\wamp\\www\\front-v1.0",
-  "author": {
-    "name": "Matt Boldt",
-    "email": "me@mattboldt.com"
-  },
-  "bugs": {
-    "url": "https://github.com/mattboldt/typed.js/issues"
-  },
+  "name": "typed.js",
+  "version": "2.0.12",
+  "homepage": "https://github.com/mattboldt/typed.js",
+  "repository": "https://github.com/mattboldt/typed.js",
+  "license": "MIT",
+  "author": "Matt Boldt <me@mattboldt.com>",
   "description": "A JavaScript Typing Animation Library",
+  "main": "lib/typed.js",
+  "keywords": [
+    "typed",
+    "animation"
+  ],
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-core": "^5.8.24",
@@ -57,19 +33,9 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.4.1",
     "webpack": "^1.12.1",
-    "webpack-stream": "^2.1.0"
-  },
-  "homepage": "https://github.com/mattboldt/typed.js",
-  "keywords": [
-    "typed",
-    "animation"
-  ],
-  "license": "MIT",
-  "main": "lib/typed.js",
-  "name": "typed.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mattboldt/typed.js.git"
-  },
-  "version": "2.0.9"
+    "webpack-stream": "^2.1.0",
+    "lodash": "^4.17.5",
+    "mime": "^1.4.1",
+    "debug": "^2.6.9"
+  }
 }

@@ -2,7 +2,7 @@
  * 
  *   typed.js - A JavaScript Typing Animation Library
  *   Author: Matt Boldt <me@mattboldt.com>
- *   Version: v2.0.9
+ *   Version: v2.0.12
  *   Url: https://github.com/mattboldt/typed.js
  *   License(s): MIT
  * 
@@ -183,6 +183,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function begin() {
 	      var _this = this;
 	
+	      this.options.onBegin(this);
 	      this.typingComplete = false;
 	      this.shuffleStringsIfNeeded(this);
 	      this.insertCursor();
@@ -267,7 +268,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _this2.toggleBlinking(false);
 	
 	          // We're done with this sentence!
-	          if (curStrPos === curString.length) {
+	          if (curStrPos >= curString.length) {
 	            _this2.doneTyping(curString, curStrPos);
 	          } else {
 	            _this2.keepTyping(curString, curStrPos, numChars);
@@ -307,7 +308,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	
 	    /**
-	     * We're done typing all strings
+	     * We're done typing the current string
 	     * @param {string} curString the current string in the strings array
 	     * @param {number} curStrPos the current position in the curString
 	     * @private
@@ -346,7 +347,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var _this4 = this;
 	
 	      if (this.pause.status === true) {
-	        this.setPauseStatus(curString, curStrPos, true);
+	        this.setPauseStatus(curString, curStrPos, false);
 	        return;
 	      }
 	      if (this.fadeOut) return this.initFadeOut();
@@ -550,6 +551,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.cursor) return;
 	      this.cursor = document.createElement('span');
 	      this.cursor.className = 'typed-cursor';
+	      this.cursor.setAttribute('aria-hidden', true);
 	      this.cursor.innerHTML = this.cursorChar;
 	      this.el.parentNode && this.el.parentNode.insertBefore(this.cursor, this.el.nextSibling);
 	    }
@@ -873,6 +875,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  contentType: 'html',
 	
 	  /**
+	   * Before it begins typing
+	   * @param {Typed} self
+	   */
+	  onBegin: function onBegin(self) {},
+	
+	  /**
 	   * All typing is complete
 	   * @param {Typed} self
 	   */
@@ -946,7 +954,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 3 */
 /***/ (function(module, exports) {
 
-	
 	/**
 	 * TODO: These methods can probably be combined somehow
 	 * Parse HTML tags & HTML Characters

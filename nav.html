@@ -1,6 +1,6 @@
 <div id="logoAndNav" class="container">
   <!-- Nav -->
-  <nav class="js-mega-menu navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg">
     <!-- Logo -->
     <a class="navbar-brand mt-2" href="/" aria-label="Front">
       <!-- <img src="./assets/svg/logos/logoNameWhite.svg" alt="Logo"> -->
@@ -31,12 +31,13 @@
     <!-- End Logo -->
 
     <!-- Responsive Toggle Button -->
-    <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-            aria-controls="navBar"
-            data-toggle="collapse"
-            data-target="#navBar">
+    <button type="button"
+            class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup" 
+            aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
       <span class="navbar-toggler-default">
         <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
           <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
@@ -51,31 +52,23 @@
     <!-- End Responsive Toggle Button -->
 
     <!-- Navigation -->
-    <div id="navBar" class="collapse navbar-collapse">
-      <div class="navbar-body header-abs-top-inner">
-        <ul class="navbar-nav" style="border-radius: 12px;">     
-<!--           <li class="navbar-nav-item">
-            <a class="nav-link" href="./providers.html">For Providers</a>
-          </li> -->
-          <li class="navbar-nav-item">
-            <a class="nav-link" href="./providers.html">Providers</a>
-          </li>  
-          <li class="navbar-nav-item">
-            <a class="nav-link" href="./about.html">About us</a>
-          </li>  
-          <!-- Button -->
-          <li id="CTABtn">
-          </li>
-          <!-- End Button -->
-          <!-- Button -->
-          <li class="navbar-nav-last-item">
-            <a class="btn btn-sm btn-secondary ml-lg-3 mb-2 mb-lg-0 w-100" href="https://app.getallminds.com/login">
-              Log in
+    <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
+
+        <div class="navbar-nav" style="border-radius: 12px; white-space: nowrap; gap: 16px;">     
+          
+            <a class="nav-link" href="./providers.html">For Clinicians</a>
+            <!-- <a class="nav-link" href="./about.html">About us</a> -->
+            <!-- Button -->
+            <a id="CTABtn">
             </a>
-          </li>
-          <!-- End Button -->
-        </ul>
-      </div>
+            <!-- End Button -->
+            <!-- Button -->
+            <a id="LogInBtn">
+            </a>
+            <!-- End Button -->
+
+        </div>
+
     </div>
     <!-- End Navigation -->
   </nav>
