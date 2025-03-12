@@ -105,6 +105,13 @@
         $(function(){
           $("#nav-placeholder").load("nav.html", function(){
             $("#CTABtn").append('<a href="https://careers.hireology.com/allminds/1745215/description" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm mt-3 mt-lg-0 mb-2 mb-lg-0 w-100">Apply</a>');
+            var queryString = window.location.search; //grab URL params
+            // console.log(queryString);
+            var links = document.getElementById("nav-placeholder").getElementsByTagName('a'); //create list of all links (a tags) on page
+            // console.log(links) //check that a link list has been created. Remove in production
+            for (var i = 0; i < links.length; i++) { //loop through your link list
+                links[i].href = links[i].href + queryString; //set existing href value to href value plus query string
+            }
           });
         });
       </script>
@@ -614,7 +621,15 @@
   </div>
   <script>
     $(function(){
-      $("#footer-placeholder").load("footer.html");
+      $("#footer-placeholder").load("footer.html", function(){
+        var queryString = window.location.search; //grab URL params
+        console.log(queryString);
+        var links = document.getElementById("footer-placeholder").getElementsByTagName('a'); //create list of all links (a tags) on page
+        console.log(links) //check that a link list has been created. Remove in production
+        for (var i = 0; i < links.length; i++) { //loop through your link list
+            links[i].href = links[i].href + queryString; //set existing href value to href value plus query string
+        }
+      });
     });
   </script>
   <!-- ========== END FOOTER ========== -->
@@ -739,6 +754,18 @@
 
     });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {  //this fires the moment the DOM (document object model) is in place.
+      var queryString = window.location.search; //grab URL params
+      //console.log(queryString); //check that a queryString has been found. Remove in production
+      var links = document.getElementsByTagName('a'); //create list of all links (a tags) on page
+      //console.log(links) //check that a link list has been created. Remove in production
+      for (var i = 0; i < links.length; i++) { //loop through your link list
+          links[i].href = links[i].href + queryString; //set existing href value to href value plus query string
+      }
+  });
+</script>
 
   <!-- IE Support -->
   <script>
